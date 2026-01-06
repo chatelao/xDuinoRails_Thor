@@ -8,8 +8,6 @@ on:
 jobs:
   check:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write # WICHTIG: Erlaubt der Action das Schreiben ins Repo    
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -27,8 +25,10 @@ jobs:
           path: 3d_models/
           key: ${{ runner.os }}-kicad-3d-models-${{ hashFiles('**/xDuinoRails-Thor-M.kicad_pcb') }}
       
-      - name: Commit and Push Documentation
-        uses: stefanzweifel/git-auto-commit-action@v5
+      - name: Upload Documentation Artifacts
+        uses: actions/upload-artifact@v4
         with:
-          commit_message: "docs: Automatische Aktualisierung der KiCad Dokumentation [skip ci]"
-          file_pattern: 'gen_docs/**' # Pusht nur Dateien im Dokumentations-Ordner
+          name: KiCad-Board-Documentation
+          # Dieser Pfad muss mit dem 'dir' aus Ihrer kibot.yaml übereinstimmen
+          path: gen_docs/ 
+
