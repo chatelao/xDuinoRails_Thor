@@ -12,12 +12,19 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Run KiBot
+        uses: INTI-CMNB/KiBot@v2_k8
+        with:
+          config: kibot.yaml
+          schema: xDuinoRails-Thor-M.kicad_sch
+          board: xDuinoRails-Thor-M.kicad_pcb
+
       - name: Cache 3D models
         uses: actions/cache@v4
         with:
           path: 3d_models/
           key: ${{ runner.os }}-kicad-3d-models-${{ hashFiles('**/xDuinoRails-Thor-M.kicad_pcb') }}
-
+      
       - name: Commit and Push Documentation
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
