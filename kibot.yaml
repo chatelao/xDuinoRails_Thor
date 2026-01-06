@@ -59,13 +59,13 @@ outputs:
       units: 'millimeters'
       separate_files_for_front_and_back: true
       columns:
-        - field: Ref
+        - id: Ref
           name: Designator
-        - field: PosX
+        - id: PosX
           name: "Mid X"
-        - field: PosY
+        - id: PosY
           name: "Mid Y"
-        - field: Side
+        - id: Side
           name: Layer
-        - field: Rot
+        - id: Rot
           name: Rotation
