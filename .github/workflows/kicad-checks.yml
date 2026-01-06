@@ -24,5 +24,4 @@ jobs:
           config: kibot.yaml
           schema: xDuinoRails-Thor-M.kicad_sch
           board: xDuinoRails-Thor-M.kicad_pcb
-          targets: 'NONE'
           cache3D: YES
