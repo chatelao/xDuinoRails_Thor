@@ -15,6 +15,24 @@ preflight:
     # ignore_unconnected: false
     
 outputs:
-  - name: 'print_pdf'
+  - name: 'PDF_Schaltplan'
+    comment: 'Erzeugt ein PDF des Schaltplans'
     type: pdf_sch_print
-    dir: gen_docs
+    dir: 'gen_docs/Schaltplan'
+
+  - name: 'Gerber_Dateien'
+    comment: 'Erzeugt Gerber-Daten für die Fertigung'
+    type: gerber
+    dir: 'gen_docs/Fabrication/Gerber'
+
+  - name: 'Bohr_Dateien'
+    comment: 'Erzeugt Excellon-Bohrdateien'
+    type: excellon
+    dir: 'gen_docs/Fabrication/Drill'
+
+  - name: 'Stueckliste_BOM'
+    comment: 'Erzeugt eine Stückliste im CSV-Format'
+    type: bom
+    options:
+      format: CSV
+    dir: 'gen_docs/BOM'
