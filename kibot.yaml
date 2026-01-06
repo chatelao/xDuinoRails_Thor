@@ -1,10 +1,22 @@
 kibot:
   version: 1
 
-  preflight:
-    erc: true
-    drc: true
-    #erc_warnings: true
-    #drc_warnings: true
-    check_zone_fills: true  # Wichtig: Zonen vor dem Check neu füllen!
-    ignore_unconnected: false
+outputs:
+  # ✅ ERC als expliziter Output Task
+  - name: 'erc_check'
+    comment: "Electrical Rules Check"
+    type: erc
+    dir: Reports/ERC
+    options:
+      format: html  # Oder 'report' für Textdateien
+      # Hier kannst du Filter definieren, falls nötig
+
+  # ✅ DRC als expliziter Output Task
+  - name: 'drc_check'
+    comment: "Design Rules Check"
+    type: drc
+    dir: Reports/DRC
+    options:
+      format: html
+      # Kritisch für CI: Soll bei DRC Fehlern abgebrochen werden?
+      # KiBot exited standardmäßig mit Error-Code, wenn DRC Fehler gefunden werden.
