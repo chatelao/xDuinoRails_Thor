@@ -24,6 +24,8 @@ outputs:
     comment: 'Erzeugt Gerber-Daten für die Fertigung'
     type: gerber
     dir: 'gen_docs/Fabrication/Gerber'
+    options:
+      use_protel_extensions: true    
 
   - name: 'Bohr_Dateien'
     comment: 'Erzeugt Excellon-Bohrdateien'
