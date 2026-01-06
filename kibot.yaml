@@ -20,6 +20,41 @@ outputs:
     type: pdf_sch_print
     dir: 'gen_docs'
 
+  # 2. Interaktive Stückliste (Extrem nützlich!)
+  - name: 'Interaktive_BOM'
+    type: ibom
+    dir: 'gen_docs'
+    options:
+      dark_mode: true
+
+  # 3. PCB-Layout als PDF (Alle Lagen)
+  - name: 'PCB_Layout'
+    type: pcb_print
+    dir: 'gen_docs'
+    options:
+      pages:
+        - layers: [F.Cu, F.SilkS, F.Mask]
+          sheet: 'Top Side'
+        - layers: [B.Cu, B.SilkS, B.Mask]
+          sheet: 'Bottom Side'
+
+  # 4. 3D-Modell (STEP)
+  - name: '3D_Modell'
+    type: step
+    dir: 'gen_docs/3D'
+
+  # 5. 3D-Renders (Bilder für README)
+  - name: 'Render_Top'
+    type: render_3d
+    dir: 'gen_docs'
+    options:
+      view: top
+  - name: 'Render_Bottom'
+    type: render_3d
+    dir: 'gen_docs'
+    options:
+      view: bottom
+
   - name: 'Gerber_Dateien'
     comment: 'Erzeugt Gerber-Daten für die Fertigung'
     type: gerber
