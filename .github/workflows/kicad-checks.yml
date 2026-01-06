@@ -8,6 +8,8 @@ on:
 jobs:
   check:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # WICHTIG: Erlaubt der Action das Schreiben ins Repo    
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
