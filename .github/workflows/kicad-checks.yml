@@ -18,10 +18,8 @@ jobs:
           path: 3d_models/
           key: ${{ runner.os }}-kicad-3d-models-${{ hashFiles('**/xDuinoRails-Thor-M.kicad_pcb') }}
 
-      - name: Run KiBot
-        uses: INTI-CMNB/KiBot@v2_k8
+      - name: Commit and Push Documentation
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          config: kibot.yaml
-          schema: xDuinoRails-Thor-M.kicad_sch
-          board: xDuinoRails-Thor-M.kicad_pcb
-          cache3D: YES
+          commit_message: "docs: Automatische Aktualisierung der KiCad Dokumentation [skip ci]"
+          file_pattern: 'gen_docs/**' # Pusht nur Dateien im Dokumentations-Ordner
