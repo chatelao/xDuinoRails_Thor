@@ -1,0 +1,60 @@
+{
+  "subpcb": {
+    "loco-driver-motor.kicad_pcb": {
+      "anchor": "U101"
+    },
+    "loco-driver-func.kicad_pcb": {
+      "anchor": "Q101"
+    },
+    "rails_power-buffer.kicad_pcb": {
+      "anchor": "C101"
+    },
+    "rails_signal_feedback_dcc-railcom-8x50.kicad_pcb": {
+      "anchor": "Q101"
+    },
+    "rails_power_dc-dc-ldo-3v3_100mA.kicad_pcb": {
+      "anchor": "U101"
+    },
+    "rails-signal-acknowledge_dcc.kicad_pcb": {
+      "anchor": "D101"
+    },
+    "xDuinoRails-Thor-M.kicad_pcb": {
+      "anchor": "U1101"
+    }
+  },
+  "sheet": {
+    "": {
+      "checked": false
+    },
+    "/0bf87bfc-1a64-4ae3-9476-ab62edd28dcb": {
+      "checked": true
+    },
+    "/28e0fa6a-354f-41d6-8b58-d1dd784eb1fe": {
+      "checked": true
+    },
+    "/3c699e35-5808-46af-b922-4c3eb1f6da5c": {
+      "checked": false
+    },
+    "/7f2dffda-86dd-4aa5-9dde-ab2b4c52db38": {
+      "checked": false
+    },
+    "/a3f567b3-edcb-4aa0-8471-532dbe641db4": {
+      "checked": true
+    },
+    "/c9229de7-1ed3-435d-9b11-33fa2e05ec65": {
+      "checked": false
+    },
+    "/c9229de7-1ed3-435d-9b11-33fa2e05ec65/3f6df3ac-cacb-4a62-a6cd-afb105728627": {
+      "checked": false
+    },
+    "/c9229de7-1ed3-435d-9b11-33fa2e05ec65/b3e33b0b-4447-491d-8248-39a0d5e1dc57": {
+      "checked": true
+    },
+    "/c9229de7-1ed3-435d-9b11-33fa2e05ec65/deaf1b68-8bb1-4a22-bf5f-eab4be33579f": {
+      "checked": true
+    },
+    "/e1a52612-70a7-429e-ada6-6f2a698a279c": {
+      "checked": true
+    }
+  }
+}

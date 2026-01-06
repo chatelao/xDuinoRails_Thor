@@ -1,0 +1,58 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "05e300d5-f5fa-4357-9552-f348c65b0d1e")
+	(paper "A4")
+	(title_block
+		(title "xDuinoRail - LocDecoder - Development Kit")
+		(date "2024-10-09")
+		(rev "v0.2")
+		(company "Chatelain Engineering, Bern - CH")
+	)
+	(lib_symbols)
+	(text "Output Driver"
+		(exclude_from_sim no)
+		(at 59.182 36.322 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left bottom)
+		)
+		(uuid "7128dfe5-4d62-41cf-89ec-af50d189f50c")
+	)
+	(hierarchical_label "I_MOTOR"
+		(shape input)
+		(at 34.29 58.42 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "268aba55-ca40-42b1-b4b2-3d4d0c7046dd")
+	)
+	(hierarchical_label "GND"
+		(shape input)
+		(at 34.29 76.2 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d3164f0b-14bf-43cb-985a-d7a45c428998")
+	)
+	(hierarchical_label "I_FUNC"
+		(shape input)
+		(at 34.29 63.5 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d33119bd-20d3-4512-a8eb-9d5c878f2148")
+	)
+)

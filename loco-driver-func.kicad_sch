@@ -824,10 +824,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "55f5592a-065e-4a5f-8d03-723a81507621")
+			(uuid "5c2baaa3-1450-413d-a2fd-471c8430bb1a")
 		)
 		(pin "1"
-			(uuid "ad18a9a3-cab9-4fd0-829f-99fcf95216a2")
+			(uuid "9bffa129-6e6a-426d-97ec-306590c497fb")
 		)
 		(instances
 			(project "xDuinoRails-Thor-M"
@@ -954,10 +954,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "94b2cf49-88e3-4d91-80c4-6fe5484fc0c0")
+			(uuid "75dbad02-9dbf-479d-8b6b-2fef22793c12")
 		)
 		(pin "1"
-			(uuid "f999f61b-a5c9-41f7-83b2-23bbca15dd28")
+			(uuid "a5771add-e777-4d60-a373-2677823b36a7")
 		)
 		(instances
 			(project "xDuinoRails-Thor-M"
@@ -1033,10 +1033,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "48beb327-09e0-4586-88b4-25498586d2ee")
+			(uuid "b1de74ec-050f-4c4c-b8a8-c8984dfcbb42")
 		)
 		(pin "1"
-			(uuid "69976617-958a-4b9a-867d-4c2dcce0e7ae")
+			(uuid "51a602dd-8318-421c-85e3-41842503c08e")
 		)
 		(instances
 			(project "xDuinoRails-Thor-M"
@@ -1115,13 +1115,13 @@
 			)
 		)
 		(pin "1"
-			(uuid "67627dbd-d2b2-4548-988b-3e7b79e974f1")
+			(uuid "e3ba9eb8-bebd-4e79-9f22-ca92dc7088e5")
 		)
 		(pin "3"
-			(uuid "4562ff5c-2fd6-44ae-b3e0-7e75a6df572e")
+			(uuid "e56ae462-5792-425a-aa57-2b9d18ab1efa")
 		)
 		(pin "2"
-			(uuid "e1b6d448-f8f2-4fe8-b399-494832ddac18")
+			(uuid "2b571809-695c-4ee8-9e73-b54d047b20bd")
 		)
 		(instances
 			(project "xDuinoRails-Thor-M"
@@ -1200,13 +1200,13 @@
 			)
 		)
 		(pin "1"
-			(uuid "fa77837e-1a2d-44a6-ba7e-a9d88f72543c")
+			(uuid "afd63a93-cfce-4a7e-9e1f-89c91d962481")
 		)
 		(pin "3"
-			(uuid "975b565d-4ebe-42db-8886-1f0dead4495b")
+			(uuid "d6afeed4-ca1d-4d08-a10c-da5b8cf39edb")
 		)
 		(pin "2"
-			(uuid "6bf1d9bf-d553-49ac-b915-e10dec34720d")
+			(uuid "26b82162-9693-4cb5-8fe2-3c96c6ac2435")
 		)
 		(instances
 			(project "xDuinoRails-Thor-M"

@@ -1,0 +1,100 @@
+Plugin v0.0.1 running on KiCad 8.0.9 and Python 3.11.5 (main, Dec 24 2024, 05:27:06) [MSC v.1942 64 bit (AMD64)] on win32.
+Imported C:\Users\chatelain\Dropbox\ws\xDuinoRails_Thor\loco-driver-motor.kicad_pcb, with 10 footprints, 0 tracks, and 0 drawings.
+Imported C:\Users\chatelain\Dropbox\ws\xDuinoRails_Thor\loco-driver-func.kicad_pcb, with 2 footprints, 0 tracks, and 0 drawings.
+Imported C:\Users\chatelain\Dropbox\ws\xDuinoRails_Thor\rails_power-buffer.kicad_pcb, with 4 footprints, 0 tracks, and 0 drawings.
+Imported C:\Users\chatelain\Dropbox\ws\xDuinoRails_Thor\rails_signal_feedback_dcc-railcom-8x50.kicad_pcb, with 7 footprints, 0 tracks, and 0 drawings.
+Imported C:\Users\chatelain\Dropbox\ws\xDuinoRails_Thor\rails_power_dc-dc-ldo-3v3_100mA.kicad_pcb, with 4 footprints, 16 tracks, and 3 drawings.
+Imported C:\Users\chatelain\Dropbox\ws\xDuinoRails_Thor\rails-signal-acknowledge_dcc.kicad_pcb, with 4 footprints, 11 tracks, and 0 drawings.
+Imported C:\Users\chatelain\Dropbox\ws\xDuinoRails_Thor\xDuinoRails-Thor-M.kicad_pcb, with 38 footprints, 1 tracks, and 31 drawings.
+Stammblatt (+ PCB C:\Users\chatelain\Dropbox\ws\xDuinoRails_Thor\xDuinoRails-Thor-M.kicad_pcb)
+├─ rails_power-buffer (+ PCB C:\Users\chatelain\Dropbox\ws\xDuinoRails_Thor\rails_power-buffer.kicad_pcb)
+├─ loco-driver-motor (+ PCB C:\Users\chatelain\Dropbox\ws\xDuinoRails_Thor\loco-driver-motor.kicad_pcb)
+├─ loco-adapter-nem660-21mtc
+├─ rails_power_ac-dc-bridge-medium-3xs
+├─ rails_power_dc-dc-ldo-3v3_100mA (+ PCB C:\Users\chatelain\Dropbox\ws\xDuinoRails_Thor\rails_power_dc-dc-ldo-3v3_100mA.kicad_pcb)
+├─ c9229de7
+│  ├─ rails_signal_extraction_dcc
+│  ├─ rails_signal_feedback_dcc-railcom-8x50 (+ PCB C:\Users\chatelain\Dropbox\ws\xDuinoRails_Thor\rails_signal_feedback_dcc-railcom-8x50.kicad_pcb)
+│  ├─ rails-signal-acknowledge_dcc (+ PCB C:\Users\chatelain\Dropbox\ws\xDuinoRails_Thor\rails-signal-acknowledge_dcc.kicad_pcb)
+├─ loco-driver-func (+ PCB C:\Users\chatelain\Dropbox\ws\xDuinoRails_Thor\loco-driver-func.kicad_pcb)
+PCB C:\Users\chatelain\Dropbox\ws\xDuinoRails_Thor\loco-driver-motor.kicad_pcb
+  /7eccaf43: R101
+  /9b7961fd: C104
+  /f73e7ab4: R105
+  /e500cbf8: C102
+  /a7fd313c: R104
+  /2bf60704: U101
+  /bc049482: C103
+  /5a91f7b3: R102
+  /2d20c6fc: R103
+  /ce95552a: C101
+PCB C:\Users\chatelain\Dropbox\ws\xDuinoRails_Thor\loco-driver-func.kicad_pcb
+  /a705ca36: Q101
+  /0d9c54ba: Q102
+PCB C:\Users\chatelain\Dropbox\ws\xDuinoRails_Thor\rails_power-buffer.kicad_pcb
+  /9f084e9b: C102
+  /febb2076: D101
+  /a8c26bae: R101
+  /6954d688: C101
+PCB C:\Users\chatelain\Dropbox\ws\xDuinoRails_Thor\rails_signal_feedback_dcc-railcom-8x50.kicad_pcb
+  /294347dd: R102
+  /026ed440: Q101
+  /15a74d9e: Q104
+  /c08b9b37: R104
+  /92c8825e: R101
+  /f5f6cfd5: D101
+  /93d20184: Q103
+PCB C:\Users\chatelain\Dropbox\ws\xDuinoRails_Thor\rails_power_dc-dc-ldo-3v3_100mA.kicad_pcb
+  /6a2c0364: U101
+  /064b43f2: C101
+  /ac5d6138: C102
+  /05e6b0df: C103
+PCB C:\Users\chatelain\Dropbox\ws\xDuinoRails_Thor\rails-signal-acknowledge_dcc.kicad_pcb
+  /8e40fe18: R102
+  /08069ce0: R101
+  /f26a7b70: Q101
+  /319d2021: D101
+PCB C:\Users\chatelain\Dropbox\ws\xDuinoRails_Thor\xDuinoRails-Thor-M.kicad_pcb
+  /28e0fa6a/a7fd313c: R504
+  /e1a52612/7b95f612: R901
+  /0bf87bfc/a8c26bae: R701
+  /c9229de7/b3e33b0b/f5f6cfd5: D601
+  /a3f567b3/ac5d6138: C202
+  /c9229de7/b3e33b0b/294347dd: R601
+  /e1a52612/3c985e2f: R903
+  /a3f567b3/064b43f2: C201
+  /c9229de7/deaf1b68/319d2021: D1301
+  /c9229de7/b3e33b0b/93d20184: Q604
+  /c9229de7/deaf1b68/8e40fe18: R1302
+  /c9229de7/b3e33b0b/026ed440: Q601
+  /c9229de7/deaf1b68/08069ce0: R1301
+  /28e0fa6a/e500cbf8: C502
+  /c9229de7/deaf1b68/f26a7b70: Q1301
+  /28e0fa6a/bc049482: C503
+  /c9229de7/b3e33b0b/c08b9b37: R604
+  /28e0fa6a/ce95552a: C501
+  /28e0fa6a/7eccaf43: R501
+  /c9229de7/3f6df3ac/8123e40c: R1201
+  /a3f567b3/05e6b0df: C203
+  /3c699e35/6dab23ea: J401
+  /0bf87bfc/febb2076: D701
+  /c9229de7/b3e33b0b/15a74d9e: Q602
+  /0bf87bfc/9f084e9b: C702
+  /28e0fa6a/2d20c6fc: R503
+  /e1a52612/3b6d9ee0: R902
+  /28e0fa6a/2bf60704: U501
+  /28e0fa6a/f73e7ab4: R505
+  /0bf87bfc/6954d688: C701
+  /7f2dffda/f0c5cadd: D101
+  /c9229de7/b3e33b0b/92c8825e: R603
+  /28e0fa6a/9b7961fd: C504
+  /e1a52612/ab551eca: Q901
+  /e1a52612/f57fa274: Q902
+  /28e0fa6a/5a91f7b3: R502
+  /a3f567b3/6a2c0364: U201
+  /d4a4bea9: U1101
+Checking /c9229de7-1ed3-435d-9b11-33fa2e05ec65: False.
+ERR.2	anchor not found on target
+ Message: Expected path /e1a52612-70a7-429e-ada6-6f2a698a279c/a705ca36-cb6b-4796-9304-0cc441c39a76
+ SubPCB: C:\Users\chatelain\Dropbox\ws\xDuinoRails_Thor\loco-driver-func.kicad_pcb
+Saved.

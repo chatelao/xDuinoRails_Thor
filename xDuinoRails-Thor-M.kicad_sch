@@ -4014,6 +4014,84 @@
 		)
 	)
 	(sheet
+		(at 214.63 41.91)
+		(size 29.21 19.05)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 255 203 1.0000)
+		)
+		(uuid "a9403bde-50df-4cf0-b8d0-25b03e0e0cbd")
+		(property "Sheetname" "loco-driver-shunts"
+			(at 214.63 41.1984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "loco-driver-shunts.kicad_sch"
+			(at 214.63 61.5446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "GND" input
+			(at 228.6 60.96 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "6b441468-ee88-476a-9d6c-a3bdaccf2ada")
+		)
+		(pin "I_FUNC" output
+			(at 214.63 45.72 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "d402c446-a239-4609-ab35-14354a31affb")
+		)
+		(pin "AMP_FUNC[0..1]" output
+			(at 243.84 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "dfca0675-32bc-435e-b0c0-e00f15a21e54")
+		)
+		(pin "FUNC[0..1]" input
+			(at 214.63 48.26 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "7fbb4464-cd74-4e35-b0c7-cbaed3d6a150")
+		)
+		(instances
+			(project "xDuinoRails-Thor-M"
+				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a"
+					(page "1")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 33.02 97.79)
 		(size 25.4 21.59)
 		(fields_autoplaced yes)
