@@ -17,4 +17,4 @@ preflight:
 outputs:
   - name: 'print_pdf'
     type: pdf_sch_print
-    dir: Documentation
+    dir: gen_docs
