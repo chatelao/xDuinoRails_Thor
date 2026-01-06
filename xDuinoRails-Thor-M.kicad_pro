@@ -746,12 +746,12 @@
   },
   "sheets": [
     [
-      "a9403bde-50df-4cf0-b8d0-25b03e0e0cbd",
-      "loco-driver-shunts"
-    ],
-    [
       "7f2dffda-86dd-4aa5-9dde-ab2b4c52db38",
       "rails_power_ac-dc-bridge-medium-3xs"
+    ],
+    [
+      "0bf87bfc-1a64-4ae3-9476-ab62edd28dcb",
+      "rails_power-buffer"
     ],
     [
       "a3f567b3-edcb-4aa0-8471-532dbe641db4",
@@ -786,8 +786,8 @@
       "loco-driver-func"
     ],
     [
-      "0bf87bfc-1a64-4ae3-9476-ab62edd28dcb",
-      "rails_power-buffer"
+      "a9403bde-50df-4cf0-b8d0-25b03e0e0cbd",
+      "loco-driver-shunts"
     ],
     [
       "fb33ec4e-6596-45d2-a121-8d3475acd69a",

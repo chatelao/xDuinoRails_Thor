@@ -2,3 +2,4 @@
 *.lck
 *_prl
 *.hierpcb.*
+#auto_saved_files#

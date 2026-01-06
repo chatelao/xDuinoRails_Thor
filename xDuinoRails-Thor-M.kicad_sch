@@ -813,12 +813,24 @@
 		(uuid "a00dc6e8-2705-4d00-9659-51364b6bddb1")
 	)
 	(no_connect
+		(at 229.87 60.96)
+		(uuid "06d9ce36-6442-47e8-854a-378958d613ec")
+	)
+	(no_connect
+		(at 243.84 52.07)
+		(uuid "1e19a945-15a7-462a-8948-ce623d31d268")
+	)
+	(no_connect
 		(at 269.24 124.46)
 		(uuid "5e24bd05-dbba-473f-9873-856a941260fb")
 	)
 	(no_connect
 		(at 233.68 137.16)
 		(uuid "685b85f4-abd9-42ba-8bc6-79245acddb1c")
+	)
+	(no_connect
+		(at 243.84 49.53)
+		(uuid "74f0446c-3148-4c40-a685-18ab40f2d90a")
 	)
 	(no_connect
 		(at 269.24 129.54)
@@ -829,8 +841,20 @@
 		(uuid "9e6b625f-7364-4272-8f9a-e62ca058572e")
 	)
 	(no_connect
+		(at 214.63 52.07)
+		(uuid "a05a9839-0538-4ca3-8088-d50bed5c3f20")
+	)
+	(no_connect
 		(at 269.24 121.92)
 		(uuid "a228adad-8f1c-476b-88ca-c5d87fcb90a0")
+	)
+	(no_connect
+		(at 229.87 41.91)
+		(uuid "a9b71b16-42d0-4017-8695-f75e54b99195")
+	)
+	(no_connect
+		(at 214.63 49.53)
+		(uuid "b6fd4864-89ad-4c8d-bb3d-e789c0c4ed79")
 	)
 	(no_connect
 		(at 233.68 133.35)
@@ -3606,7 +3630,7 @@
 		(instances
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a"
-					(page "11")
+					(page "2")
 				)
 			)
 		)
@@ -3930,7 +3954,7 @@
 		(instances
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a"
-					(page "2")
+					(page "1")
 				)
 			)
 			(project ""
@@ -4043,50 +4067,70 @@
 				(justify left top)
 			)
 		)
-		(pin "GND" input
-			(at 228.6 60.96 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "6b441468-ee88-476a-9d6c-a3bdaccf2ada")
-		)
-		(pin "I_FUNC" output
-			(at 214.63 45.72 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "d402c446-a239-4609-ab35-14354a31affb")
-		)
-		(pin "AMP_FUNC[0..1]" output
-			(at 243.84 50.8 0)
+		(pin "I_MOTOR" input
+			(at 243.84 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "dfca0675-32bc-435e-b0c0-e00f15a21e54")
+			(uuid "4cb04928-0eb6-4086-85b0-88d0f2ddf36e")
 		)
-		(pin "FUNC[0..1]" input
-			(at 214.63 48.26 180)
+		(pin "+3V3" input
+			(at 229.87 41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "dd20847e-26a3-4d2f-88c7-4b49525b35df")
+		)
+		(pin "GND" input
+			(at 229.87 60.96 270)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "7fbb4464-cd74-4e35-b0c7-cbaed3d6a150")
+			(uuid "af5bbf48-18f7-42df-8ac8-53432bee2b33")
+		)
+		(pin "I_FUNC" input
+			(at 243.84 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "4712bd28-ac3c-438e-9066-46dd8abe8233")
+		)
+		(pin "OFF_ MOTOR" output
+			(at 214.63 52.07 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "37b283dc-5732-47a8-b0e2-25571ff328b6")
+		)
+		(pin "OFF_FUNC" output
+			(at 214.63 49.53 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "4d6f2ddb-227c-4e9f-b792-04a7ae0fbb57")
 		)
 		(instances
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a"
-					(page "1")
+					(page "11")
 				)
 			)
 		)
