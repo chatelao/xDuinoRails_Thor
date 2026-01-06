@@ -36,3 +36,12 @@ outputs:
     options:
       format: CSV
     dir: 'gen_docs/BOM'
+
+  - name: 'position_files'
+    comment: 'Positionsdateien für die Bestückung (Pick & Place)'
+    type: pcb_position
+    dir: 'gen_docs/POS'
+    options:
+      format: 'CSV'
+      units: 'millimeters'
+      separate_files_for_front_and_back: true
