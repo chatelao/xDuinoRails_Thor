@@ -18,24 +18,24 @@ outputs:
   - name: 'PDF_Schaltplan'
     comment: 'Erzeugt ein PDF des Schaltplans'
     type: pdf_sch_print
-    dir: 'gen_docs/Schaltplan'
+    dir: 'gen_docs'
 
   - name: 'Gerber_Dateien'
     comment: 'Erzeugt Gerber-Daten für die Fertigung'
     type: gerber
-    dir: 'gen_docs/Fabrication/Gerber'
+    dir: 'gen_docs/CAM'
     options:
       use_protel_extensions: true    
 
   - name: 'Bohr_Dateien'
     comment: 'Erzeugt Excellon-Bohrdateien'
     type: excellon
-    dir: 'gen_docs/Fabrication/Drill'
+    dir: 'gen_docs/CAM'
 
   - name: 'Stueckliste_BOM'
     comment: 'Erzeugt eine Stückliste im CSV-Format'
     type: bom
-    dir: 'gen_docs/BOM'
+    dir: 'gen_docs/CAM'
     options:
       format: CSV
       columns:
@@ -52,8 +52,8 @@ outputs:
 
   - name: 'position_files'
     comment: 'Positionsdateien für die Bestückung (Pick & Place)'
-    type: pcb_position
-    dir: 'gen_docs/POS'
+    type: position
+    dir: 'gen_docs/CAM'
     options:
       format: 'CSV'
       units: 'millimeters'
