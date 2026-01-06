@@ -1,0 +1,23 @@
+name: KiCad DRC and ERC Checks
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up KiCad
+        uses: actions-for-kicad/setup-kicad@v1
+        with:
+          version: '8.0'
+
+      - name: Run ERC
+        run: kicad-cli sch erc xDuinoRails-Thor-M.kicad_sch
+
+      - name: Run DRC
+        run: kicad-cli pcb drc xDuinoRails-Thor-M.kicad_pcb
