@@ -1,7 +1,7 @@
 kibot:
   version: 1
 
-preflights:
+preflight:
   # ✅ ERC Check als Preflight
   - name: 'Electrical Check'
     comment: 'Check for electrical rule violations'
