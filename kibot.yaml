@@ -4,3 +4,7 @@ kibot:
   preflight:
     erc: true
     drc: true
+    #erc_warnings: true
+    #drc_warnings: true
+    check_zone_fills: true  # Wichtig: Zonen vor dem Check neu füllen!
+    ignore_unconnected: false
