@@ -33,9 +33,20 @@ outputs:
   - name: 'Stueckliste_BOM'
     comment: 'Erzeugt eine Stückliste im CSV-Format'
     type: bom
+    dir: 'gen_docs/BOM'
     options:
       format: CSV
-    dir: 'gen_docs/BOM'
+      columns:
+        - field: 'Reference'
+          name: 'Designator'
+        - field: 'Value'
+          name: 'Value'
+        - field: 'Footprint'
+          name: 'Package'
+        - field: 'LCSC' # Falls Sie ein Custom-Feld "LCSC" für Bauteilnummern haben
+          name: 'LCSC Part #'
+        - field: 'Quantity'
+          name: 'Quantity'
 
   - name: 'position_files'
     comment: 'Positionsdateien für die Bestückung (Pick & Place)'
@@ -45,3 +56,14 @@ outputs:
       format: 'CSV'
       units: 'millimeters'
       separate_files_for_front_and_back: true
+      columns:
+        - field: Ref
+          name: Designator
+        - field: PosX
+          name: "Mid X"
+        - field: PosY
+          name: "Mid Y"
+        - field: Side
+          name: Layer
+        - field: Rot
+          name: Rotation
