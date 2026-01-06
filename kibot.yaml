@@ -1,22 +1,23 @@
 kibot:
   version: 1
 
-outputs:
-  # ✅ ERC als expliziter Output Task
-  - name: 'erc_check'
-    comment: "Electrical Rules Check"
-    type: erc
-    dir: Reports/ERC
+preflights:
+  # ✅ ERC Check als Preflight
+  - name: 'Electrical Check'
+    comment: 'Check for electrical rule violations'
+    type: run_erc
     options:
-      format: html  # Oder 'report' für Textdateien
-      # Hier kannst du Filter definieren, falls nötig
+      exit_if_error: True # Bricht den CI-Lauf bei Fehlern ab
 
-  # ✅ DRC als expliziter Output Task
-  - name: 'drc_check'
-    comment: "Design Rules Check"
-    type: drc
-    dir: Reports/DRC
+  # ✅ DRC Check als Preflight
+  - name: 'Design Check'
+    comment: 'Check for design rule violations'
+    type: run_drc
     options:
-      format: html
-      # Kritisch für CI: Soll bei DRC Fehlern abgebrochen werden?
-      # KiBot exited standardmäßig mit Error-Code, wenn DRC Fehler gefunden werden.
+      exit_if_error: True
+
+outputs:
+  # Deine restlichen Outputs (Gerber, PDF, etc.) kommen hierhin
+  - name: 'print_pdf'
+    type: pdf_sch_print
+    dir: Documentation
