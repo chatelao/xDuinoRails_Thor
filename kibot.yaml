@@ -2,22 +2,19 @@ kibot:
   version: 1
 
 preflight:
-  # ✅ ERC Check als Preflight
-  - name: 'Electrical Check'
-    comment: 'Check for electrical rule violations'
-    type: run_erc
-    options:
-      exit_if_error: True # Bricht den CI-Lauf bei Fehlern ab
-
-  # ✅ DRC Check als Preflight
-  - name: 'Design Check'
-    comment: 'Check for design rule violations'
-    type: run_drc
-    options:
-      exit_if_error: True
-
+  # Der Schlüsselname bestimmt die Art der Prüfung (hier ERC)
+  erc:
+    enabled: true
+    # Optionen für ERC falls nötig, z.B. um Warnungen als Fehler zu werten:
+    # warnings_as_errors: true 
+    
+  # Der Schlüsselname bestimmt die Art der Prüfung (hier DRC)
+  drc:
+    enabled: true
+    # Optionen für DRC
+    # ignore_unconnected: false
+    
 outputs:
-  # Deine restlichen Outputs (Gerber, PDF, etc.) kommen hierhin
   - name: 'print_pdf'
     type: pdf_sch_print
     dir: Documentation
