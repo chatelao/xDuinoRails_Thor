@@ -27,7 +27,7 @@ preflights:
       wbk: 'rails_signal_feedback_dcc-railcom-8x50.wbk'
     
 outputs:
-  - name: 'Run_Simulation'
+- name: 'Run_Simulation'
     comment: 'Führt die Ngspice-Simulation aus und speichert Plots'
     type: simulation
     dir: 'gen_docs/sim'
