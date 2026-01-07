@@ -12,6 +12,18 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Get week number
+        id: week
+        run: echo "week_number=$(date -u +%V)" >> $GITHUB_OUTPUT
+
+      - name: Cache ngspice installation
+        uses: actions/cache@v4
+        with:
+          path: /var/cache/apt/archives
+          key: ${{ runner.os }}-ngspice-${{ steps.week.outputs.week_number }}
+          restore-keys: |
+            ${{ runner.os }}-ngspice-
+
       - name: Install Simulation Tools
         run: |
           sudo apt-get update
