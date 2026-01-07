@@ -76,3 +76,13 @@ outputs:
     dir: 'gen_docs/Spice'
     options:
       format: 'spice'
+
+  - name: 'Archive'
+    comment: 'Creates a ZIP file with all generated documentation'
+    type: compress
+    dir: '.' # The ZIP will be created in the project root
+    options:
+      output: 'KiCad-Board-Documentation.zip'
+      files:
+        # This will grab the entire gen_docs directory and put it in the zip
+        - source: 'gen_docs/**'
