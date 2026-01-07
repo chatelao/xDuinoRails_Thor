@@ -69,3 +69,10 @@ outputs:
           name: Layer
         - id: Rot
           name: Rotation
+
+  - name: 'Spice_Netlist'
+    comment: 'Export ngspice netlist'
+    type: netlist
+    dir: 'gen_docs/Spice'
+    options:
+      format: 'spice'
