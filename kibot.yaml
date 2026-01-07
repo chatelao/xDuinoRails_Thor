@@ -76,7 +76,9 @@ outputs:
     dir: 'gen_docs/CAM'
     options:
       use_protel_extensions: true    
-
+      plot_footprint_refs: false
+      plot_footprint_values: false
+      
   - name: 'Bohr_Dateien'
     comment: 'Erzeugt Excellon-Bohrdateien'
     type: excellon
