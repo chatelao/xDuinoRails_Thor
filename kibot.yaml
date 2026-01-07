@@ -19,7 +19,6 @@ preflight:
     type: run_simulation
     options:
       exit_if_error: True
-    options:
       wbk: 'rails_signal_feedback_dcc-railcom-8x50.wbk'
     
 outputs:
