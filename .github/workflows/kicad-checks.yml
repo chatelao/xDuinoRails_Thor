@@ -3,6 +3,10 @@ name: KiCad DRC and ERC Checks
 
 on:
   push:
+    branches:
+      - main
+    tags:
+      - 'v*'
   pull_request:
 
 jobs:
@@ -25,10 +29,19 @@ jobs:
           path: 3d_models/
           key: ${{ runner.os }}-kicad-3d-models-${{ hashFiles('**/xDuinoRails-Thor-M.kicad_pcb') }}
       
-      - name: Upload Documentation Artifacts
+      - name: Upload Artifacts
         uses: actions/upload-artifact@v4
         with:
           name: KiCad-Board-Documentation
-          # Dieser Pfad muss mit dem 'dir' aus Ihrer kibot.yaml übereinstimmen
-          path: gen_docs/ 
+          path: |
+            gen_docs/
+            KiCad-Board-Documentation.zip
+
+      - name: Create Release and Upload Asset
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v1
+        with:
+          files: KiCad-Board-Documentation.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
