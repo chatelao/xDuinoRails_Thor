@@ -15,6 +15,16 @@ preflight:
     # ignore_unconnected: false
     
 outputs:
+  - name: 'Run_Simulation'
+    comment: 'Führt die Ngspice-Simulation aus und speichert Plots'
+    type: simulation
+    dir: 'gen_docs/sim'
+    options:
+      wbk: 'rails_signal_feedback_dcc-railcom-8x50.wbk'
+      format: PNG
+      # Optional: Nur bestimmte Plots exportieren
+      # plots: ['Transient Analysis', 'AC Analysis']
+
   - name: 'PDF_Schaltplan'
     comment: 'Erzeugt ein PDF des Schaltplans'
     type: pdf_sch_print
