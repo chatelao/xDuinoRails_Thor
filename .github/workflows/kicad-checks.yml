@@ -6,8 +6,27 @@ on:
   pull_request:
 
 jobs:
-  check:
+  setup:
     runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - id: set-matrix
+        name: Find KiCad Projects
+        run: |
+          pro_files=$(find . -maxdepth 1 -name "*.kicad_pro" -exec basename {} .kicad_pro \; | jq -R -s -c 'split("\n") | map(select(length > 0))')
+          echo "matrix=${pro_files}" >> $GITHUB_OUTPUT
+
+  check:
+    needs: setup
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        project: ${{ fromJson(needs.setup.outputs.matrix) }}
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -16,19 +35,20 @@ jobs:
         uses: INTI-CMNB/KiBot@v2_k8
         with:
           config: kibot.yaml
-          schema: xDuinoRails-Thor-M.kicad_sch
-          board: xDuinoRails-Thor-M.kicad_pcb
+          schema: ${{ matrix.project }}.kicad_sch
+          board: ${{ matrix.project }}.kicad_pcb
+          dir: assets/${{ matrix.project }}
 
       - name: Cache 3D models
         uses: actions/cache@v4
         with:
           path: 3d_models/
-          key: ${{ runner.os }}-kicad-3d-models-${{ hashFiles('**/xDuinoRails-Thor-M.kicad_pcb') }}
-      
+          key: ${{ runner.os }}-kicad-3d-models-${{ hashFiles(format('**/{0}.kicad_pcb', matrix.project)) }}
+          restore-keys: |
+            ${{ runner.os }}-kicad-3d-models-
+
       - name: Upload Documentation Artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: KiCad-Board-Documentation
-          # Dieser Pfad muss mit dem 'dir' aus Ihrer kibot.yaml übereinstimmen
-          path: gen_docs/ 
-
+          name: KiCad-Docs-${{ matrix.project }}
+          path: assets/${{ matrix.project }}/
