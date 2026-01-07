@@ -19,7 +19,7 @@ preflights:
       exit_if_error: false
       wbk: 'rails_signal_feedback_dcc-railcom-8x50.wbk'
 
-- name: 'Check_Simulation'
+  - name: 'Check_Simulation'
     comment: 'Prüft, ob die Spice-Simulation erfolgreich startet'
     type: run_simulation
     options:
