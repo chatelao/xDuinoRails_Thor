@@ -77,6 +77,17 @@ outputs:
     options:
       format: 'spice'
 
+  - name: "Pinion_Image"
+    comment: "Basis-Bild für Pinion Pinout"
+    type: pcbdraw
+    dir: "assets"
+    options:
+      format: png
+      style: "builtin:oshpark-purple"
+      show_components: all
+      dpi: 600
+      output: "board_top.png"
+
   - name: 'Fertigungsdaten_ZIP'
     comment: 'Erzeugt ein ZIP-Archiv mit allen Fertigungsdaten'
     type: compress
