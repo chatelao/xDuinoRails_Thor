@@ -860,7 +860,7 @@
 			)
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/0bf87bfc-1a64-4ae3-9476-ab62edd28dcb"
-					(reference "C701")
+					(reference "C201")
 					(unit 1)
 				)
 			)
@@ -1052,7 +1052,7 @@
 			)
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/0bf87bfc-1a64-4ae3-9476-ab62edd28dcb"
-					(reference "C702")
+					(reference "C202")
 					(unit 1)
 				)
 			)
@@ -1138,7 +1138,7 @@
 			)
 			(project ""
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/0bf87bfc-1a64-4ae3-9476-ab62edd28dcb"
-					(reference "R701")
+					(reference "R201")
 					(unit 1)
 				)
 			)
@@ -1241,7 +1241,7 @@
 			)
 			(project ""
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/0bf87bfc-1a64-4ae3-9476-ab62edd28dcb"
-					(reference "D701")
+					(reference "D201")
 					(unit 1)
 				)
 			)

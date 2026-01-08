@@ -712,7 +712,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "23950a2c-f24d-41fe-b6c8-2b39f8bf649c")
-		(property "Reference" "U101"
+		(property "Reference" "U1101"
 			(at 34.29 58.4199 0)
 			(effects
 				(font
@@ -784,7 +784,7 @@
 		(instances
 			(project ""
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/a9403bde-50df-4cf0-b8d0-25b03e0e0cbd"
-					(reference "U101")
+					(reference "U1101")
 					(unit 3)
 				)
 			)
@@ -800,7 +800,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4510c944-4b21-421e-860f-14175f63ee82")
-		(property "Reference" "R103"
+		(property "Reference" "R1101"
 			(at 59.69 39.3699 0)
 			(effects
 				(font
@@ -854,7 +854,7 @@
 		(instances
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/a9403bde-50df-4cf0-b8d0-25b03e0e0cbd"
-					(reference "R103")
+					(reference "R1101")
 					(unit 1)
 				)
 			)
@@ -869,7 +869,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4b2b8846-109b-4c7f-8fcf-8805f5a7e300")
-		(property "Reference" "U101"
+		(property "Reference" "U1101"
 			(at 85.09 39.37 0)
 			(effects
 				(font
@@ -913,33 +913,33 @@
 			)
 		)
 		(pin "5"
-			(uuid "3d142f24-705b-4f37-811e-7220680a3d26")
+			(uuid "3d142f24-705b-4f37-811e-7220680a3d27")
 		)
 		(pin "1"
-			(uuid "3a88a125-ca42-4c74-9520-863057d3cdd0")
+			(uuid "3a88a125-ca42-4c74-9520-863057d3cdd1")
 		)
 		(pin "2"
-			(uuid "c46f69d6-2607-4ea0-8675-1781e405cedc")
+			(uuid "c46f69d6-2607-4ea0-8675-1781e405cedd")
 		)
 		(pin "4"
-			(uuid "382f5914-e002-4fdc-a8af-f778cbc3709b")
+			(uuid "382f5914-e002-4fdc-a8af-f778cbc3709c")
 		)
 		(pin "7"
-			(uuid "89089718-0e2a-4f3c-9f71-fec62d3245f6")
+			(uuid "89089718-0e2a-4f3c-9f71-fec62d3245f7")
 		)
 		(pin "8"
-			(uuid "afa5e651-0172-4b96-8768-8a66a41046d1")
+			(uuid "afa5e651-0172-4b96-8768-8a66a41046d2")
 		)
 		(pin "6"
-			(uuid "7d82c56c-b261-49a3-af89-af9501bf8b10")
+			(uuid "7d82c56c-b261-49a3-af89-af9501bf8b11")
 		)
 		(pin "3"
-			(uuid "331918aa-2995-48c6-bfe9-f51ee4ea2bf2")
+			(uuid "331918aa-2995-48c6-bfe9-f51ee4ea2bf3")
 		)
 		(instances
 			(project ""
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/a9403bde-50df-4cf0-b8d0-25b03e0e0cbd"
-					(reference "U101")
+					(reference "U1101")
 					(unit 1)
 				)
 			)
@@ -956,7 +956,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5f0c3052-e7d8-4e0e-843a-c574dbb9ef58")
-		(property "Reference" "R101"
+		(property "Reference" "R1103"
 			(at 59.69 73.6599 0)
 			(effects
 				(font
@@ -1010,7 +1010,7 @@
 		(instances
 			(project ""
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/a9403bde-50df-4cf0-b8d0-25b03e0e0cbd"
-					(reference "R101")
+					(reference "R1103")
 					(unit 1)
 				)
 			)
@@ -1026,7 +1026,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bc1157e2-8982-4b59-9237-988fc8a8daa5")
-		(property "Reference" "U101"
+		(property "Reference" "U1101"
 			(at 85.09 57.15 0)
 			(effects
 				(font
@@ -1070,33 +1070,33 @@
 			)
 		)
 		(pin "5"
-			(uuid "3d142f24-705b-4f37-811e-7220680a3d26")
+			(uuid "3d142f24-705b-4f37-811e-7220680a3d28")
 		)
 		(pin "1"
-			(uuid "3a88a125-ca42-4c74-9520-863057d3cdd0")
+			(uuid "3a88a125-ca42-4c74-9520-863057d3cdd2")
 		)
 		(pin "2"
-			(uuid "c46f69d6-2607-4ea0-8675-1781e405cedc")
+			(uuid "c46f69d6-2607-4ea0-8675-1781e405cede")
 		)
 		(pin "4"
-			(uuid "382f5914-e002-4fdc-a8af-f778cbc3709b")
+			(uuid "382f5914-e002-4fdc-a8af-f778cbc3709d")
 		)
 		(pin "7"
-			(uuid "89089718-0e2a-4f3c-9f71-fec62d3245f6")
+			(uuid "89089718-0e2a-4f3c-9f71-fec62d3245f8")
 		)
 		(pin "8"
-			(uuid "afa5e651-0172-4b96-8768-8a66a41046d1")
+			(uuid "afa5e651-0172-4b96-8768-8a66a41046d3")
 		)
 		(pin "6"
-			(uuid "7d82c56c-b261-49a3-af89-af9501bf8b10")
+			(uuid "7d82c56c-b261-49a3-af89-af9501bf8b12")
 		)
 		(pin "3"
-			(uuid "331918aa-2995-48c6-bfe9-f51ee4ea2bf2")
+			(uuid "331918aa-2995-48c6-bfe9-f51ee4ea2bf4")
 		)
 		(instances
 			(project ""
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/a9403bde-50df-4cf0-b8d0-25b03e0e0cbd"
-					(reference "U101")
+					(reference "U1101")
 					(unit 2)
 				)
 			)
@@ -1111,7 +1111,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d9b3865c-7709-45a3-ab88-3098bf019ebc")
-		(property "Reference" "R102"
+		(property "Reference" "R1102"
 			(at 59.69 57.1499 0)
 			(effects
 				(font
@@ -1165,7 +1165,7 @@
 		(instances
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/a9403bde-50df-4cf0-b8d0-25b03e0e0cbd"
-					(reference "R102")
+					(reference "R1102")
 					(unit 1)
 				)
 			)

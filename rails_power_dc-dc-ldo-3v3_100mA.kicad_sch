@@ -1023,6 +1023,12 @@
 					(unit 1)
 				)
 			)
+			(project "xDuinoRails-Thor-M"
+				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/a3f567b3-edcb-4aa0-8471-532dbe641db4"
+					(reference "C303")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -1239,6 +1245,12 @@
 					(unit 1)
 				)
 			)
+			(project "xDuinoRails-Thor-M"
+				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/a3f567b3-edcb-4aa0-8471-532dbe641db4"
+					(reference "C301")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -1302,6 +1314,12 @@
 			(project "rails_power_dc-dc-ldo-3v3_100mA-test"
 				(path "/0ed6639a-cde6-4452-b9e1-77c370bade86/f74e307f-98ea-4a21-90fe-788ab4c41003"
 					(reference "#FLG202")
+					(unit 1)
+				)
+			)
+			(project "xDuinoRails-Thor-M"
+				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/a3f567b3-edcb-4aa0-8471-532dbe641db4"
+					(reference "#FLG302")
 					(unit 1)
 				)
 			)
@@ -1456,6 +1474,12 @@
 			(project "central-railcom-feedback-quattro"
 				(path "/e8f9fd83-27d4-40ee-a2c1-fd6356795d83/74710df9-7e61-48be-b0f8-0d4cba0f15c2/a5aa2612-0bfe-49ce-a543-ccf125bffe47"
 					(reference "U?")
+					(unit 1)
+				)
+			)
+			(project "xDuinoRails-Thor-M"
+				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/a3f567b3-edcb-4aa0-8471-532dbe641db4"
+					(reference "U301")
 					(unit 1)
 				)
 			)
@@ -1656,6 +1680,12 @@
 					(unit 1)
 				)
 			)
+			(project "xDuinoRails-Thor-M"
+				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/a3f567b3-edcb-4aa0-8471-532dbe641db4"
+					(reference "C302")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -1719,6 +1749,12 @@
 			(project ""
 				(path "/0ed6639a-cde6-4452-b9e1-77c370bade86/f74e307f-98ea-4a21-90fe-788ab4c41003"
 					(reference "#FLG201")
+					(unit 1)
+				)
+			)
+			(project "xDuinoRails-Thor-M"
+				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/a3f567b3-edcb-4aa0-8471-532dbe641db4"
+					(reference "#FLG301")
 					(unit 1)
 				)
 			)

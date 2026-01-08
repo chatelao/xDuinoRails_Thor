@@ -1737,7 +1737,7 @@
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "6dab23ea-d8b7-4526-8651-efc2326ecf0e")
-		(property "Reference" "J401"
+		(property "Reference" "J801"
 			(at 59.69 72.39 0)
 			(effects
 				(font
@@ -1849,7 +1849,7 @@
 		(instances
 			(project ""
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/3c699e35-5808-46af-b922-4c3eb1f6da5c"
-					(reference "J401")
+					(reference "J801")
 					(unit 1)
 				)
 			)
@@ -1927,7 +1927,7 @@
 			)
 			(project "loco-adapter-nem660-21mtc"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/3c699e35-5808-46af-b922-4c3eb1f6da5c"
-					(reference "#PWR401")
+					(reference "#PWR801")
 					(unit 1)
 				)
 			)
