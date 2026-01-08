@@ -852,7 +852,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "08069ce0-37c9-4daf-a1f8-b9e42cf52c19")
-		(property "Reference" "R601"
+		(property "Reference" "R101"
 			(at 62.23 53.34 90)
 			(effects
 				(font
@@ -1001,6 +1001,12 @@
 			(uuid "1b48cd92-c668-44c0-a425-dc065a74e183")
 		)
 		(instances
+			(project "rails-signal-acknowledge_dcc"
+				(path "/e494a89a-0a39-499b-b7b0-4f61cfd00d18"
+					(reference "R101")
+					(unit 1)
+				)
+			)
 			(project "xDuinoRails-Fortuna-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/c9229de7-1ed3-435d-9b11-33fa2e05ec65/deaf1b68-8bb1-4a22-bf5f-eab4be33579f"
 					(reference "R601")
@@ -1019,7 +1025,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "319d2021-5fed-4674-9480-8a7b879b51c3")
-		(property "Reference" "D601"
+		(property "Reference" "D101"
 			(at 68.58 30.48 0)
 			(effects
 				(font
@@ -1109,6 +1115,12 @@
 			(uuid "48812072-05e3-424c-9ec9-920395a51df1")
 		)
 		(instances
+			(project "rails-signal-acknowledge_dcc"
+				(path "/e494a89a-0a39-499b-b7b0-4f61cfd00d18"
+					(reference "D101")
+					(unit 1)
+				)
+			)
 			(project "xDuinoRails-Fortuna-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/c9229de7-1ed3-435d-9b11-33fa2e05ec65/deaf1b68-8bb1-4a22-bf5f-eab4be33579f"
 					(reference "D601")
@@ -1126,7 +1138,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8e40fe18-eb2f-4d33-a104-125c8fd16cd5")
-		(property "Reference" "R602"
+		(property "Reference" "R102"
 			(at 46.99 72.39 90)
 			(effects
 				(font
@@ -1275,6 +1287,12 @@
 			(uuid "05a4cd92-f020-4924-8ba2-ab39e7fb5b6a")
 		)
 		(instances
+			(project "rails-signal-acknowledge_dcc"
+				(path "/e494a89a-0a39-499b-b7b0-4f61cfd00d18"
+					(reference "R102")
+					(unit 1)
+				)
+			)
 			(project "xDuinoRails-Fortuna-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/c9229de7-1ed3-435d-9b11-33fa2e05ec65/deaf1b68-8bb1-4a22-bf5f-eab4be33579f"
 					(reference "R602")
@@ -1292,7 +1310,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f26a7b70-4b21-4638-94b6-4f8d64ecaa0f")
-		(property "Reference" "Q601"
+		(property "Reference" "Q101"
 			(at 71.12 77.47 0)
 			(effects
 				(font
@@ -1458,12 +1476,23 @@
 			(uuid "c3f94e46-40b4-4031-9abb-363ee2acafab")
 		)
 		(instances
+			(project "rails-signal-acknowledge_dcc"
+				(path "/e494a89a-0a39-499b-b7b0-4f61cfd00d18"
+					(reference "Q101")
+					(unit 1)
+				)
+			)
 			(project "xDuinoRails-Fortuna-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/c9229de7-1ed3-435d-9b11-33fa2e05ec65/deaf1b68-8bb1-4a22-bf5f-eab4be33579f"
 					(reference "Q601")
 					(unit 1)
 				)
 			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
 		)
 	)
 )
