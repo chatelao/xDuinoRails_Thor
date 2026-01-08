@@ -557,6 +557,36 @@
           "label": "Beschreibung",
           "name": "Description",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Frequency",
+          "name": "Frequency",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC",
+          "name": "LCSC",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "rohs_cert_or_in_datasheet",
+          "name": "rohs_cert_or_in_datasheet",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "OLI_ID",
+          "name": "OLI_ID",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC Part #",
+          "name": "LCSC Part #",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -607,7 +637,7 @@
   "sheets": [
     [
       "05e300d5-f5fa-4357-9552-f348c65b0d1e",
-      "Stammblatt"
+      "Root"
     ],
     [
       "d4f38dff-3059-4603-8995-2402d29cae24",
