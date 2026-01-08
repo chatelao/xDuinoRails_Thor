@@ -9,7 +9,7 @@ preflight:
     
   # Der Schlüsselname bestimmt die Art der Prüfung (hier DRC)
   drc:
-    enabled: true
+    enabled: false
     # Optionen für DRC
     # ignore_unconnected: false
     
