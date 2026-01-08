@@ -1,25 +1,23 @@
-Plugin v0.0.1 running on KiCad 8.0.7 and Python 3.11.5 (main, Nov  3 2024, 06:58:22) [MSC v.1939 64 bit (AMD64)] on win32.
-Imported C:\Users\chatelain\Dropbox\Privat-2023\2023-11-11_DCC-EX-Shield\xDuinoRail-Decoder\kicad\xDuinoRailShield.orig\rails_signal_feedback_dcc-railcom-8x50.kicad_pcb, with 8 footprints, 26 tracks, and 2 drawings.
-Imported C:\Users\chatelain\Dropbox\Privat-2023\2023-11-11_DCC-EX-Shield\xDuinoRail-Decoder\kicad\xDuinoRailShield.orig\rails_signal_feedback_dcc-railcom-8x50_test.kicad_pcb, with 9 footprints, 41 tracks, and 9 drawings.
-Stammblatt (+ PCB C:\Users\chatelain\Dropbox\Privat-2023\2023-11-11_DCC-EX-Shield\xDuinoRail-Decoder\kicad\xDuinoRailShield.orig\rails_signal_feedback_dcc-railcom-8x50_test.kicad_pcb)
-├─ rails_signal_feedback_dcc-railcom-8x50 (+ PCB C:\Users\chatelain\Dropbox\Privat-2023\2023-11-11_DCC-EX-Shield\xDuinoRail-Decoder\kicad\xDuinoRailShield.orig\rails_signal_feedback_dcc-railcom-8x50.kicad_pcb)
-PCB C:\Users\chatelain\Dropbox\Privat-2023\2023-11-11_DCC-EX-Shield\xDuinoRail-Decoder\kicad\xDuinoRailShield.orig\rails_signal_feedback_dcc-railcom-8x50.kicad_pcb
+Plugin v0.0.1 running on KiCad 8.0.9 and Python 3.11.5 (main, Dec 24 2024, 05:27:06) [MSC v.1942 64 bit (AMD64)] on win32.
+Imported C:\Users\chatelain\Dropbox\ws\xDuinoRails_Thor\rails_signal_feedback_dcc-railcom-8x50.kicad_pcb, with 7 footprints, 0 tracks, and 0 drawings.
+Imported C:\Users\chatelain\Dropbox\ws\xDuinoRails_Thor\rails_signal_feedback_dcc-railcom-8x50_test.kicad_pcb, with 8 footprints, 67 tracks, and 9 drawings.
+Stammblatt (+ PCB C:\Users\chatelain\Dropbox\ws\xDuinoRails_Thor\rails_signal_feedback_dcc-railcom-8x50_test.kicad_pcb)
+├─ rails_signal_feedback_dcc-railcom-8x50 (+ PCB C:\Users\chatelain\Dropbox\ws\xDuinoRails_Thor\rails_signal_feedback_dcc-railcom-8x50.kicad_pcb)
+PCB C:\Users\chatelain\Dropbox\ws\xDuinoRails_Thor\rails_signal_feedback_dcc-railcom-8x50.kicad_pcb
   /294347dd: R102
   /026ed440: Q101
-  /f41f6b5b: R103
   /15a74d9e: Q104
   /c08b9b37: R104
   /92c8825e: R101
   /f5f6cfd5: D101
   /93d20184: Q103
-PCB C:\Users\chatelain\Dropbox\Privat-2023\2023-11-11_DCC-EX-Shield\xDuinoRail-Decoder\kicad\xDuinoRailShield.orig\rails_signal_feedback_dcc-railcom-8x50_test.kicad_pcb
-  /2444bbf9/c08b9b37: R104
+PCB C:\Users\chatelain\Dropbox\ws\xDuinoRails_Thor\rails_signal_feedback_dcc-railcom-8x50_test.kicad_pcb
+  /2444bbf9/c08b9b37: R103
+  /2444bbf9/92c8825e: R102
+  /2444bbf9/294347dd: R101
+  /2444bbf9/15a74d9e: Q102
   /2444bbf9/026ed440: Q101
   /2444bbf9/f5f6cfd5: D101
-  /2444bbf9/f41f6b5b: R103
-  /2444bbf9/294347dd: R102
   /78e9e5ad: J201
-  /2444bbf9/15a74d9e: Q104
-  /2444bbf9/93d20184: Q103
-  /2444bbf9/92c8825e: R101
+  /2444bbf9/93d20184: Q104
 Saved.

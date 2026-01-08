@@ -1402,6 +1402,10 @@
 					(reference "Q101")
 					(unit 1)
 				)
+				(path "/6d7aefd8-fcb8-4935-b99c-c7045c3b702f/2444bbf9-5682-4e11-b667-350d7de8ca4f"
+					(reference "Q101")
+					(unit 1)
+				)
 			)
 			(project "xDuinoRail-Arduino-RailcomDetect-Dev"
 				(path "/81b33966-136c-4d5d-8e55-9dddbbd3dbe5/2e760e4f-382c-4bbb-b931-2c889ce9fb97"
@@ -1607,6 +1611,10 @@
 					(reference "Q104")
 					(unit 1)
 				)
+				(path "/6d7aefd8-fcb8-4935-b99c-c7045c3b702f/2444bbf9-5682-4e11-b667-350d7de8ca4f"
+					(reference "Q102")
+					(unit 1)
+				)
 			)
 			(project "xDuinoRail-Arduino-RailcomDetect-Dev"
 				(path "/81b33966-136c-4d5d-8e55-9dddbbd3dbe5/2e760e4f-382c-4bbb-b931-2c889ce9fb97"
@@ -1777,6 +1785,10 @@
 			(project "rails_signal_feedback_dcc-railcom-8x50"
 				(path "/6d7aefd8-fcb8-4935-b99c-c7045c3b702f"
 					(reference "R102")
+					(unit 1)
+				)
+				(path "/6d7aefd8-fcb8-4935-b99c-c7045c3b702f/2444bbf9-5682-4e11-b667-350d7de8ca4f"
+					(reference "R101")
 					(unit 1)
 				)
 			)
@@ -1983,6 +1995,10 @@
 					(reference "Q102")
 					(unit 1)
 				)
+				(path "/6d7aefd8-fcb8-4935-b99c-c7045c3b702f/2444bbf9-5682-4e11-b667-350d7de8ca4f"
+					(reference "Q103")
+					(unit 1)
+				)
 			)
 			(project "xDuinoRail-Arduino-RailcomDetect-Dev"
 				(path "/81b33966-136c-4d5d-8e55-9dddbbd3dbe5/2e760e4f-382c-4bbb-b931-2c889ce9fb97"
@@ -2168,6 +2184,10 @@
 			(project "rails_signal_feedback_dcc-railcom-8x50"
 				(path "/6d7aefd8-fcb8-4935-b99c-c7045c3b702f"
 					(reference "R101")
+					(unit 1)
+				)
+				(path "/6d7aefd8-fcb8-4935-b99c-c7045c3b702f/2444bbf9-5682-4e11-b667-350d7de8ca4f"
+					(reference "R102")
 					(unit 1)
 				)
 			)
@@ -2374,6 +2394,10 @@
 					(reference "Q103")
 					(unit 1)
 				)
+				(path "/6d7aefd8-fcb8-4935-b99c-c7045c3b702f/2444bbf9-5682-4e11-b667-350d7de8ca4f"
+					(reference "Q104")
+					(unit 1)
+				)
 			)
 			(project "xDuinoRail-Arduino-RailcomDetect-Dev"
 				(path "/81b33966-136c-4d5d-8e55-9dddbbd3dbe5/2e760e4f-382c-4bbb-b931-2c889ce9fb97"
@@ -2560,6 +2584,10 @@
 			(project "rails_signal_feedback_dcc-railcom-8x50"
 				(path "/6d7aefd8-fcb8-4935-b99c-c7045c3b702f"
 					(reference "R104")
+					(unit 1)
+				)
+				(path "/6d7aefd8-fcb8-4935-b99c-c7045c3b702f/2444bbf9-5682-4e11-b667-350d7de8ca4f"
+					(reference "R103")
 					(unit 1)
 				)
 			)
@@ -2749,6 +2777,10 @@
 		(instances
 			(project "rails_signal_feedback_dcc-railcom-8x50"
 				(path "/6d7aefd8-fcb8-4935-b99c-c7045c3b702f"
+					(reference "D101")
+					(unit 1)
+				)
+				(path "/6d7aefd8-fcb8-4935-b99c-c7045c3b702f/2444bbf9-5682-4e11-b667-350d7de8ca4f"
 					(reference "D101")
 					(unit 1)
 				)

@@ -973,12 +973,120 @@
 				)
 			)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 101.6 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "674042f7-5537-4fd0-855b-6ef9529b0cfd")
 	)
 	(junction
 		(at 118.11 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6f2fd1b4-4ecc-47c2-9de0-cc4817736eae")
+	)
+	(junction
+		(at 100.33 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "726bcbb5-7001-44f5-a577-873780610fdf")
 	)
 	(junction
 		(at 179.07 87.63)
@@ -999,8 +1107,24 @@
 		(uuid "e272a849-cc71-499e-b6a8-a075a2a5d677")
 	)
 	(no_connect
-		(at 147.32 66.04)
-		(uuid "f50e0822-7ef8-4148-9473-af6213ea837b")
+		(at 31.75 53.34)
+		(uuid "3b4a9773-c656-476f-9f37-133f8f25f94a")
+	)
+	(no_connect
+		(at 25.4 64.77)
+		(uuid "752b16d4-33df-47e2-8ad4-f97e9e7a5cac")
+	)
+	(no_connect
+		(at 30.48 58.42)
+		(uuid "a5eae74e-f90a-4843-b11b-b20d20784e26")
+	)
+	(no_connect
+		(at 31.75 55.88)
+		(uuid "b3396c73-b15d-4746-b3a8-a90670aba1f9")
+	)
+	(no_connect
+		(at 25.4 62.23)
+		(uuid "c0306910-cf40-430c-8feb-32a823c98421")
 	)
 	(wire
 		(pts
@@ -1014,16 +1138,6 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 71.12) (xy 166.37 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "09b29b96-a880-4a1d-9110-b00312c059f5")
-	)
-	(wire
-		(pts
 			(xy 128.27 40.64) (xy 128.27 52.07)
 		)
 		(stroke
@@ -1034,7 +1148,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 40.64) (xy 128.27 40.64)
+			(xy 90.17 40.64) (xy 101.6 40.64)
 		)
 		(stroke
 			(width 0)
@@ -1084,16 +1198,6 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 58.42) (xy 166.37 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "313d5732-6555-441d-af0f-c478f641f462")
-	)
-	(wire
-		(pts
 			(xy 196.85 78.74) (xy 196.85 87.63)
 		)
 		(stroke
@@ -1111,16 +1215,6 @@
 			(type default)
 		)
 		(uuid "3af9a859-03ca-4ac6-a141-9edf771ef094")
-	)
-	(wire
-		(pts
-			(xy 147.32 68.58) (xy 166.37 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3c43f909-30e5-4af8-b544-c46af4579442")
 	)
 	(wire
 		(pts
@@ -1194,7 +1288,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 57.15) (xy 68.58 57.15)
+			(xy 50.8 54.61) (xy 68.58 54.61)
 		)
 		(stroke
 			(width 0)
@@ -1244,16 +1338,6 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 73.66) (xy 166.37 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "889f7ea5-7933-4caf-8609-5836e72ac877")
-	)
-	(wire
-		(pts
 			(xy 179.07 76.2) (xy 179.07 87.63)
 		)
 		(stroke
@@ -1294,6 +1378,16 @@
 	)
 	(wire
 		(pts
+			(xy 101.6 40.64) (xy 128.27 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e387944-3b7f-4792-a736-e7b769b88635")
+	)
+	(wire
+		(pts
 			(xy 200.66 41.91) (xy 200.66 40.64)
 		)
 		(stroke
@@ -1314,7 +1408,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 87.63) (xy 118.11 87.63)
+			(xy 90.17 87.63) (xy 100.33 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1334,7 +1428,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 54.61) (xy 68.58 54.61)
+			(xy 50.8 57.15) (xy 68.58 57.15)
 		)
 		(stroke
 			(width 0)
@@ -1384,6 +1478,16 @@
 	)
 	(wire
 		(pts
+			(xy 100.33 87.63) (xy 118.11 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e87a3cc5-fb0b-4b4e-9fea-b8fa2fa41df4")
+	)
+	(wire
+		(pts
 			(xy 179.07 63.5) (xy 179.07 68.58)
 		)
 		(stroke
@@ -1422,20 +1526,8 @@
 		)
 		(uuid "4bd3dc2a-2063-413e-999c-593cb966b599")
 	)
-	(label "_TST_RC_SIGNAL"
-		(at 166.37 71.12 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "0b484595-4794-4dda-a675-621405330dfe")
-	)
 	(label "J_DCC0"
 		(at 68.58 62.23 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1446,7 +1538,6 @@
 	)
 	(label "DCC[0..1]"
 		(at 52.07 36.83 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1457,7 +1548,6 @@
 	)
 	(label "J_DCC0"
 		(at 222.25 31.75 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1466,20 +1556,8 @@
 		)
 		(uuid "3c6ff148-4246-4608-b26f-d079d5a83062")
 	)
-	(label "_TST_RC_CURR"
-		(at 166.37 58.42 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "639748c0-13b4-4e88-9f5f-f28297aa039d")
-	)
 	(label "J_DCC1"
 		(at 222.25 41.91 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1490,7 +1568,6 @@
 	)
 	(label "J_GND"
 		(at 125.73 87.63 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1501,7 +1578,6 @@
 	)
 	(label "DCC0"
 		(at 25.4 62.23 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1512,7 +1588,6 @@
 	)
 	(label "J_RAILCOM_DATA"
 		(at 179.07 63.5 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1523,7 +1598,6 @@
 	)
 	(label "DCC1"
 		(at 25.4 64.77 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1534,7 +1608,6 @@
 	)
 	(label "J_DCC[0..1]"
 		(at 99.06 58.42 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1545,7 +1618,6 @@
 	)
 	(label "J_DCC1"
 		(at 68.58 64.77 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1556,7 +1628,6 @@
 	)
 	(label "+J_3v3"
 		(at 128.27 40.64 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1565,20 +1636,8 @@
 		)
 		(uuid "e61d33c4-9f38-453a-9bf1-8dfa19fde969")
 	)
-	(label "_TST_RC_DATA_IN"
-		(at 166.37 68.58 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "f01c9bc0-acc6-4beb-9536-62e4a6b399d2")
-	)
 	(label "J_GND"
 		(at 68.58 59.69 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1588,8 +1647,7 @@
 		(uuid "f239dea2-58c4-4d81-a3bb-cfc11d9a08ea")
 	)
 	(label "J_RAILCOM_DATA"
-		(at 68.58 57.15 180)
-		(fields_autoplaced yes)
+		(at 68.58 54.61 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1598,20 +1656,8 @@
 		)
 		(uuid "f565264f-1000-4f71-8000-3bd31eca9df3")
 	)
-	(label "_TST_RC_ON_OFF"
-		(at 166.37 73.66 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "f7021346-f86d-4c48-8193-4942fb968153")
-	)
 	(label "+J_3v3"
-		(at 68.58 54.61 180)
-		(fields_autoplaced yes)
+		(at 68.58 57.15 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1623,7 +1669,6 @@
 	(hierarchical_label "DCC[0..1]"
 		(shape bidirectional)
 		(at 34.29 36.83 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1634,8 +1679,7 @@
 	)
 	(hierarchical_label "+3V3"
 		(shape input)
-		(at 31.75 53.34 180)
-		(fields_autoplaced yes)
+		(at 31.75 55.88 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1646,8 +1690,7 @@
 	)
 	(hierarchical_label "RAILCOM_DATA"
 		(shape input)
-		(at 31.75 55.88 180)
-		(fields_autoplaced yes)
+		(at 31.75 53.34 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1659,7 +1702,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 30.48 58.42 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1667,6 +1709,72 @@
 			(justify right)
 		)
 		(uuid "fb39273a-ba2b-475b-bb39-fe3ec755420d")
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 100.33 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1d0e3dc1-74f7-4160-a20f-ea149f94e5fd")
+		(property "Reference" "#FLG201"
+			(at 100.33 85.725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 100.33 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 100.33 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 100.33 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 100.33 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d4865c40-d90d-4b19-9cb8-bbb8b02a0852")
+		)
+		(instances
+			(project ""
+				(path "/6d7aefd8-fcb8-4935-b99c-c7045c3b702f"
+					(reference "#FLG201")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Simulation_SPICE:VPULSE")
@@ -2027,7 +2135,7 @@
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "a54caad0-678c-47c9-be92-008c32157e4d")
-		(property "Reference" "R202"
+		(property "Reference" "R201"
 			(at 203.2 35.5599 0)
 			(effects
 				(font
@@ -2090,7 +2198,7 @@
 		(instances
 			(project ""
 				(path "/6d7aefd8-fcb8-4935-b99c-c7045c3b702f"
-					(reference "R202")
+					(reference "R201")
 					(unit 1)
 				)
 			)
@@ -2112,7 +2220,7 @@
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "b0434b6a-fe48-4005-8389-ada2970818dd")
-		(property "Reference" "R201"
+		(property "Reference" "R202"
 			(at 181.61 71.1199 0)
 			(effects
 				(font
@@ -2175,7 +2283,7 @@
 		(instances
 			(project "rails_signal_feedback_dcc-railcom-8x50_test"
 				(path "/6d7aefd8-fcb8-4935-b99c-c7045c3b702f"
-					(reference "R201")
+					(reference "R202")
 					(unit 1)
 				)
 			)
@@ -2188,16 +2296,82 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 101.6 40.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cc9b41cc-512d-4d52-81cd-8ce6496e1923")
+		(property "Reference" "#FLG202"
+			(at 101.6 38.735 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 101.6 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 101.6 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.6 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 101.6 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "623078a9-ff70-4b27-9af4-122932f3e91b")
+		)
+		(instances
+			(project "rails_signal_feedback_dcc-railcom-8x50_test"
+				(path "/6d7aefd8-fcb8-4935-b99c-c7045c3b702f"
+					(reference "#FLG202")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Simulation_SPICE:0")
 		(at 90.17 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
-		(dnp no)
+		(on_board no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "df233c24-abfa-4337-95e1-309df180a361")
-		(property "Reference" "#GND0201"
+		(property "Reference" "#GND201"
 			(at 90.17 97.79 0)
 			(effects
 				(font
@@ -2247,7 +2421,7 @@
 		(instances
 			(project "rails_signal_feedback_dcc-railcom-8x50_test"
 				(path "/6d7aefd8-fcb8-4935-b99c-c7045c3b702f"
-					(reference "#GND0201")
+					(reference "#GND201")
 					(unit 1)
 				)
 			)
@@ -2289,26 +2463,6 @@
 				(justify left top)
 			)
 		)
-		(pin "_TST_RC_DATA_IN" output
-			(at 147.32 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "82303923-57b7-4c0d-8c62-f156bbf61cb5")
-		)
-		(pin "_TST_RC_SIGNAL" output
-			(at 147.32 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "4226f791-d755-4f3e-8eb7-e807581837b0")
-		)
 		(pin "RAILCOM_DATA" input
 			(at 147.32 63.5 0)
 			(effects
@@ -2329,26 +2483,6 @@
 			)
 			(uuid "d8bdac27-87a7-44c3-bd05-74f6143aeed5")
 		)
-		(pin "_TST_RC_J_SIGNAL" output
-			(at 147.32 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "6874523e-5c52-4756-81dc-6da6c527e9fa")
-		)
-		(pin "_TST_RC_ON_OFF" output
-			(at 147.32 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "ec57b76f-2996-4863-80a8-6c12c23f9b93")
-		)
 		(pin "GND" input
 			(at 118.11 77.47 270)
 			(effects
@@ -2358,16 +2492,6 @@
 				(justify left)
 			)
 			(uuid "bff46001-a2ef-4dbc-8e57-da0db5eb5423")
-		)
-		(pin "_TST_RC_CURR" output
-			(at 147.32 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "6b208f4e-e083-44f4-aa5d-028fa25bb307")
 		)
 		(pin "DCC[0..1]" bidirectional
 			(at 113.03 58.42 180)
