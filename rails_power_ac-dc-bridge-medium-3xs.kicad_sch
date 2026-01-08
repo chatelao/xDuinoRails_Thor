@@ -508,7 +508,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3cd0ff92-75bf-4bf0-a9e5-f0d1884aa61d")
-		(property "Reference" "#FLG0202"
+		(property "Reference" "#FLG202"
 			(at 53.34 60.325 0)
 			(effects
 				(font
@@ -558,7 +558,7 @@
 		(instances
 			(project "rails_power_ac-dc-bridge-medium-3xs-test"
 				(path "/0ed6639a-cde6-4452-b9e1-77c370bade86/04c1fa75-0851-4642-9d24-0bac3655f763"
-					(reference "#FLG0202")
+					(reference "#FLG202")
 					(unit 1)
 				)
 			)
@@ -580,7 +580,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ee88191a-2805-4002-854a-cd7a6b31af3d")
-		(property "Reference" "#FLG0201"
+		(property "Reference" "#FLG201"
 			(at 50.8 41.275 0)
 			(effects
 				(font
@@ -630,7 +630,7 @@
 		(instances
 			(project "rails_power_ac-dc-bridge-medium-3xs-test"
 				(path "/0ed6639a-cde6-4452-b9e1-77c370bade86/04c1fa75-0851-4642-9d24-0bac3655f763"
-					(reference "#FLG0201")
+					(reference "#FLG201")
 					(unit 1)
 				)
 			)

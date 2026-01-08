@@ -782,6 +782,11 @@
 					(page "16")
 				)
 			)
+			(project "rails_power_ac-dc-bridge-medium-3xs-test"
+				(path "/0ed6639a-cde6-4452-b9e1-77c370bade86"
+					(page "2")
+				)
+			)
 		)
 	)
 	(sheet_instances
