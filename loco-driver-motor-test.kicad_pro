@@ -216,7 +216,9 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      "multiple_net_names|304800|914400|a7e544cf-9864-4caa-97a0-00b916d713d4|838c9aa8-71b8-4a0d-9449-01cd6eb61573|/05e300d5-f5fa-4357-9552-f348c65b0d1e/d8ceae93-80e2-4659-88f3-9cfac1d4b735|/05e300d5-f5fa-4357-9552-f348c65b0d1e/d8ceae93-80e2-4659-88f3-9cfac1d4b735|/05e300d5-f5fa-4357-9552-f348c65b0d1e/d8ceae93-80e2-4659-88f3-9cfac1d4b735"
+    ],
     "meta": {
       "version": 0
     },
@@ -631,7 +633,7 @@
   "sheets": [
     [
       "05e300d5-f5fa-4357-9552-f348c65b0d1e",
-      "Stammblatt"
+      "Root"
     ],
     [
       "d8ceae93-80e2-4659-88f3-9cfac1d4b735",
