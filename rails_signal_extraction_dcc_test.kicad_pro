@@ -431,7 +431,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "rails_signal_extraction_dcc-test.kicad_pro",
+    "filename": "rails_signal_extraction_dcc_test.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -581,7 +581,7 @@
     ],
     [
       "f9a870df-aaf2-427d-b524-30792058699c",
-      "Stammblatt"
+      "Root"
     ]
   ],
   "text_variables": {}

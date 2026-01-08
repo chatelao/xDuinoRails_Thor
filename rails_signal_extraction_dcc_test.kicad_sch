@@ -209,6 +209,14 @@
 			)
 		)
 	)
+	(no_connect
+		(at 148.59 44.45)
+		(uuid "35a4560b-cbdc-4d2a-8a3f-632622e77f05")
+	)
+	(no_connect
+		(at 148.59 46.99)
+		(uuid "f8b67eca-162f-482f-b6d3-91ad8c63df4a")
+	)
 	(wire
 		(pts
 			(xy 129.54 44.45) (xy 148.59 44.45)
@@ -271,7 +279,6 @@
 	)
 	(label "J_DCC1"
 		(at 96.52 46.99 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -282,7 +289,6 @@
 	)
 	(label "J_DCC1"
 		(at 55.88 46.99 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -293,7 +299,6 @@
 	)
 	(label "DCC_MM_SIGNAL"
 		(at 132.08 44.45 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -304,7 +309,6 @@
 	)
 	(label "DCC1"
 		(at 137.16 46.99 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -315,7 +319,6 @@
 	)
 	(label "J_DCC_MM_SIGNAL"
 		(at 96.52 44.45 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -327,7 +330,6 @@
 	(hierarchical_label "DCC1"
 		(shape input)
 		(at 148.59 46.99 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -339,7 +341,6 @@
 	(hierarchical_label "DCC_MM_SIGNAL"
 		(shape output)
 		(at 148.59 44.45 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -492,7 +493,7 @@
 			(uuid "5738acff-2749-420a-959a-60ad878a9ac3")
 		)
 		(instances
-			(project "rails_signal_extraction_dcc-test"
+			(project "rails_signal_extraction_dcc_test"
 				(path "/f9a870df-aaf2-427d-b524-30792058699c"
 					(page "2")
 				)
