@@ -35,13 +35,23 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Build custom KiBot image
+        run: docker build --tag kibot-custom ./.github
+
+      - name: Verify pinion installation
+        run: docker run --rm kibot-custom pinion --help
+
       - name: Run KiBot
-        uses: INTI-CMNB/KiBot@v2_k8
-        with:
-          config: kibot.yaml
-          schema: ${{ matrix.project }}.kicad_sch
-          board: ${{ matrix.project }}.kicad_pcb
-          dir: assets/${{ matrix.project }}
+        run: >
+          docker run --rm
+          -v ${{ github.workspace }}:/github/workspace
+          -w /github/workspace
+          kibot-custom
+          kibot
+          -c kibot.yaml
+          -e ${{ matrix.project }}.kicad_sch
+          -b ${{ matrix.project }}.kicad_pcb
+          -d assets/${{ matrix.project }}
 
       - name: Cache 3D models
         uses: actions/cache@v4
