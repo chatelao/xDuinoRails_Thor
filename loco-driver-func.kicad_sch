@@ -844,6 +844,10 @@
 					(reference "R102")
 					(unit 1)
 				)
+				(path "/05e300d5-f5fa-4357-9552-f348c65b0d1e/d4f38dff-3059-4603-8995-2402d29cae24"
+					(reference "R202")
+					(unit 1)
+				)
 			)
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/e1a52612-70a7-429e-ada6-6f2a698a279c"
@@ -989,6 +993,10 @@
 					(reference "R103")
 					(unit 1)
 				)
+				(path "/05e300d5-f5fa-4357-9552-f348c65b0d1e/d4f38dff-3059-4603-8995-2402d29cae24"
+					(reference "R203")
+					(unit 1)
+				)
 			)
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/e1a52612-70a7-429e-ada6-6f2a698a279c"
@@ -1081,6 +1089,10 @@
 			(project "loco-driver-func"
 				(path "/05e300d5-f5fa-4357-9552-f348c65b0d1e"
 					(reference "R101")
+					(unit 1)
+				)
+				(path "/05e300d5-f5fa-4357-9552-f348c65b0d1e/d4f38dff-3059-4603-8995-2402d29cae24"
+					(reference "R201")
 					(unit 1)
 				)
 			)
@@ -1183,6 +1195,10 @@
 					(reference "Q101")
 					(unit 1)
 				)
+				(path "/05e300d5-f5fa-4357-9552-f348c65b0d1e/d4f38dff-3059-4603-8995-2402d29cae24"
+					(reference "Q201")
+					(unit 1)
+				)
 			)
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/e1a52612-70a7-429e-ada6-6f2a698a279c"
@@ -1281,6 +1297,10 @@
 			(project "loco-driver-func"
 				(path "/05e300d5-f5fa-4357-9552-f348c65b0d1e"
 					(reference "Q102")
+					(unit 1)
+				)
+				(path "/05e300d5-f5fa-4357-9552-f348c65b0d1e/d4f38dff-3059-4603-8995-2402d29cae24"
+					(reference "Q202")
 					(unit 1)
 				)
 			)
