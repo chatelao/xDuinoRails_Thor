@@ -562,12 +562,6 @@
 					(unit 1)
 				)
 			)
-			(project "rails_power_ac-dc-bridge-medium-3xs-test"
-				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/7f2dffda-86dd-4aa5-9dde-ab2b4c52db38"
-					(reference "#FLG102")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -631,12 +625,6 @@
 			(project "rails_power_ac-dc-bridge-medium-3xs-test"
 				(path "/0ed6639a-cde6-4452-b9e1-77c370bade86/04c1fa75-0851-4642-9d24-0bac3655f763"
 					(reference "#FLG0201")
-					(unit 1)
-				)
-			)
-			(project "rails_power_ac-dc-bridge-medium-3xs-test"
-				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/7f2dffda-86dd-4aa5-9dde-ab2b4c52db38"
-					(reference "#FLG101")
 					(unit 1)
 				)
 			)
@@ -720,12 +708,6 @@
 			(project "rails_power_ac-dc-bridge-medium-3xs-test"
 				(path "/0ed6639a-cde6-4452-b9e1-77c370bade86/04c1fa75-0851-4642-9d24-0bac3655f763"
 					(reference "D201")
-					(unit 1)
-				)
-			)
-			(project "rails_power_ac-dc-bridge-medium-3xs-test"
-				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/7f2dffda-86dd-4aa5-9dde-ab2b4c52db38"
-					(reference "D101")
 					(unit 1)
 				)
 			)

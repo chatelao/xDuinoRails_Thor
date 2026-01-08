@@ -325,6 +325,22 @@
 			)
 		)
 	)
+	(no_connect
+		(at 24.13 60.96)
+		(uuid "29018e2e-5d49-43f2-86fd-0d9e22c6027c")
+	)
+	(no_connect
+		(at 24.13 63.5)
+		(uuid "6bfef4ae-9dc5-4ef1-b475-558e64f5acd7")
+	)
+	(no_connect
+		(at 24.13 58.42)
+		(uuid "987d709f-a198-47c4-81e5-a0517600bdfa")
+	)
+	(no_connect
+		(at 24.13 55.88)
+		(uuid "aba7dd39-195c-4cc3-ad53-2921d172ba8c")
+	)
 	(bus
 		(pts
 			(xy 96.52 55.88) (xy 116.84 55.88)
@@ -467,7 +483,6 @@
 	)
 	(label "J_AC[0..1]"
 		(at 116.84 55.88 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -478,7 +493,6 @@
 	)
 	(label "J_U"
 		(at 90.17 35.56 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -489,7 +503,6 @@
 	)
 	(label "J_AC1"
 		(at 59.69 63.5 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -498,9 +511,8 @@
 		)
 		(uuid "415da8c4-8dba-49f0-8ab0-d7665d0d18c9")
 	)
-	(label "+U"
+	(label "U+"
 		(at 24.13 55.88 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -511,7 +523,6 @@
 	)
 	(label "AC1"
 		(at 24.13 63.5 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -522,7 +533,6 @@
 	)
 	(label "AC0"
 		(at 24.13 60.96 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -533,7 +543,6 @@
 	)
 	(label "J_GND"
 		(at 59.69 58.42 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -544,7 +553,6 @@
 	)
 	(label "GND"
 		(at 24.13 58.42 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -555,7 +563,6 @@
 	)
 	(label "J_AC0"
 		(at 59.69 60.96 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -566,7 +573,6 @@
 	)
 	(label "J_GND"
 		(at 88.9 78.74 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -577,7 +583,6 @@
 	)
 	(label "J_U"
 		(at 59.69 55.88 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -588,32 +593,29 @@
 	)
 	(hierarchical_label "GND"
 		(shape output)
-		(at 41.91 38.1 0)
-		(fields_autoplaced yes)
+		(at 24.13 58.42 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "58901020-2f30-4f65-8aa7-73b111d782f1")
 	)
 	(hierarchical_label "U+"
 		(shape output)
-		(at 41.91 35.56 0)
-		(fields_autoplaced yes)
+		(at 24.13 55.88 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "a0663101-a7c5-4f6b-a069-d7efa603a588")
 	)
 	(hierarchical_label "AC[0..1]"
 		(shape input)
 		(at 33.02 35.56 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
