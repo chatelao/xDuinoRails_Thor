@@ -563,6 +563,18 @@
 		(color 0 0 0 0)
 		(uuid "e7b0e3d0-80b7-4dcb-9039-21c90ea0e871")
 	)
+	(no_connect
+		(at 41.91 46.99)
+		(uuid "37cf8681-04ee-4112-9587-446bf8deda70")
+	)
+	(no_connect
+		(at 41.91 44.45)
+		(uuid "782e42fd-a156-4da7-bfaa-38be59bf9715")
+	)
+	(no_connect
+		(at 41.91 49.53)
+		(uuid "be24381e-331d-4f5c-b845-08052f5fa0c9")
+	)
 	(wire
 		(pts
 			(xy 60.96 77.47) (xy 60.96 80.01)
@@ -795,7 +807,6 @@
 	)
 	(label "U+"
 		(at 43.18 46.99 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -806,7 +817,6 @@
 	)
 	(label "J_GND"
 		(at 78.74 49.53 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -817,7 +827,6 @@
 	)
 	(label "J_U+"
 		(at 91.44 63.5 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -828,7 +837,6 @@
 	)
 	(label "J_U+"
 		(at 54.61 62.23 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -839,7 +847,6 @@
 	)
 	(label "GND"
 		(at 43.18 49.53 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -850,7 +857,6 @@
 	)
 	(label "J_GND"
 		(at 72.39 93.98 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -861,7 +867,6 @@
 	)
 	(label "J_GND"
 		(at 93.98 91.44 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -870,9 +875,8 @@
 		)
 		(uuid "8d88af8a-fb83-4c39-942f-c3edc372e7c0")
 	)
-	(label "J_3v3"
+	(label "J_3V3"
 		(at 111.76 63.5 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -881,9 +885,8 @@
 		)
 		(uuid "95117098-7e83-4ddb-b917-3ff6d02c466b")
 	)
-	(label "J_3v3"
+	(label "J_3V3"
 		(at 78.74 44.45 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -892,9 +895,8 @@
 		)
 		(uuid "9fdece85-e24a-44f8-bd04-a6f01d42f42c")
 	)
-	(label "J_3v3"
+	(label "J_3V3"
 		(at 72.39 62.23 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -903,9 +905,8 @@
 		)
 		(uuid "bd29a1db-cce3-4c7d-b348-ecfbe9e4723d")
 	)
-	(label "+3v3"
+	(label "+3V3"
 		(at 43.18 44.45 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -916,7 +917,6 @@
 	)
 	(label "J_U+"
 		(at 78.74 46.99 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -928,7 +928,6 @@
 	(hierarchical_label "+3V3"
 		(shape output)
 		(at 41.91 44.45 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -940,7 +939,6 @@
 	(hierarchical_label "GND"
 		(shape bidirectional)
 		(at 41.91 49.53 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -952,7 +950,6 @@
 	(hierarchical_label "U+"
 		(shape input)
 		(at 41.91 46.99 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

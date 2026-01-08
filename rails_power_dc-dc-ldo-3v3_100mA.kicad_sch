@@ -442,12 +442,114 @@
 				)
 			)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
 	)
 	(junction
 		(at 63.5 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "07e08e10-7655-4181-aaf0-2aabfd750f1a")
+	)
+	(junction
+		(at 44.45 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0ed3b94e-3810-4c0f-aea1-79285fe3e02e")
 	)
 	(junction
 		(at 50.8 59.69)
@@ -466,6 +568,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "56080ccf-f061-4c8c-a300-28e0ffe7b622")
+	)
+	(junction
+		(at 44.45 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6fd47a24-58f9-41ea-865b-56675bef7055")
 	)
 	(junction
 		(at 88.9 41.91)
@@ -581,13 +689,33 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 59.69) (xy 50.8 59.69)
+			(xy 39.37 59.69) (xy 44.45 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ac682786-0621-4709-bc44-232a708842dd")
+	)
+	(wire
+		(pts
+			(xy 44.45 59.69) (xy 50.8 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd750d79-a104-4450-b188-25a4c256f441")
+	)
+	(wire
+		(pts
+			(xy 44.45 41.91) (xy 50.8 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d613205a-e662-436a-b7c6-6847b2749ec8")
 	)
 	(wire
 		(pts
@@ -611,7 +739,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 41.91) (xy 50.8 41.91)
+			(xy 39.37 41.91) (xy 44.45 41.91)
 		)
 		(stroke
 			(width 0)
@@ -866,6 +994,10 @@
 					(reference "C103")
 					(unit 1)
 				)
+				(path "/0ed6639a-cde6-4452-b9e1-77c370bade86/f74e307f-98ea-4a21-90fe-788ab4c41003"
+					(reference "C203")
+					(unit 1)
+				)
 			)
 			(project "acc-rp2040-baseboard"
 				(path "/17b252fc-0b86-44df-bca7-0d44df4c0494/24a109c4-d847-434e-888f-5fc1df4ca39e/4198168d-02a8-4ee3-aed9-2d7c59a8a8e3"
@@ -888,12 +1020,6 @@
 			(project "central-railcom-feedback-quattro"
 				(path "/e8f9fd83-27d4-40ee-a2c1-fd6356795d83/74710df9-7e61-48be-b0f8-0d4cba0f15c2/a5aa2612-0bfe-49ce-a543-ccf125bffe47"
 					(reference "C?")
-					(unit 1)
-				)
-			)
-			(project "rails_power_dc-dc-ldo-3v3_100mA-test"
-				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/a3f567b3-edcb-4aa0-8471-532dbe641db4"
-					(reference "C203")
 					(unit 1)
 				)
 			)
@@ -1084,6 +1210,10 @@
 					(reference "C101")
 					(unit 1)
 				)
+				(path "/0ed6639a-cde6-4452-b9e1-77c370bade86/f74e307f-98ea-4a21-90fe-788ab4c41003"
+					(reference "C201")
+					(unit 1)
+				)
 			)
 			(project "acc-rp2040-baseboard"
 				(path "/17b252fc-0b86-44df-bca7-0d44df4c0494/24a109c4-d847-434e-888f-5fc1df4ca39e/4198168d-02a8-4ee3-aed9-2d7c59a8a8e3"
@@ -1109,9 +1239,69 @@
 					(unit 1)
 				)
 			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 44.45 59.69 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "15266f69-836a-4e27-bb56-bcc72ea4627f")
+		(property "Reference" "#FLG202"
+			(at 44.45 61.595 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 44.45 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 44.45 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 44.45 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 44.45 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7128e185-cc74-410b-ae34-ca0d0c1f4a63")
+		)
+		(instances
 			(project "rails_power_dc-dc-ldo-3v3_100mA-test"
-				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/a3f567b3-edcb-4aa0-8471-532dbe641db4"
-					(reference "C201")
+				(path "/0ed6639a-cde6-4452-b9e1-77c370bade86/f74e307f-98ea-4a21-90fe-788ab4c41003"
+					(reference "#FLG202")
 					(unit 1)
 				)
 			)
@@ -1240,6 +1430,10 @@
 					(reference "U101")
 					(unit 1)
 				)
+				(path "/0ed6639a-cde6-4452-b9e1-77c370bade86/f74e307f-98ea-4a21-90fe-788ab4c41003"
+					(reference "U201")
+					(unit 1)
+				)
 			)
 			(project "acc-rp2040-baseboard"
 				(path "/17b252fc-0b86-44df-bca7-0d44df4c0494/24a109c4-d847-434e-888f-5fc1df4ca39e/4198168d-02a8-4ee3-aed9-2d7c59a8a8e3"
@@ -1262,12 +1456,6 @@
 			(project "central-railcom-feedback-quattro"
 				(path "/e8f9fd83-27d4-40ee-a2c1-fd6356795d83/74710df9-7e61-48be-b0f8-0d4cba0f15c2/a5aa2612-0bfe-49ce-a543-ccf125bffe47"
 					(reference "U?")
-					(unit 1)
-				)
-			)
-			(project "rails_power_dc-dc-ldo-3v3_100mA-test"
-				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/a3f567b3-edcb-4aa0-8471-532dbe641db4"
-					(reference "U201")
 					(unit 1)
 				)
 			)
@@ -1439,6 +1627,10 @@
 					(reference "C102")
 					(unit 1)
 				)
+				(path "/0ed6639a-cde6-4452-b9e1-77c370bade86/f74e307f-98ea-4a21-90fe-788ab4c41003"
+					(reference "C202")
+					(unit 1)
+				)
 			)
 			(project "acc-rp2040-baseboard"
 				(path "/17b252fc-0b86-44df-bca7-0d44df4c0494/24a109c4-d847-434e-888f-5fc1df4ca39e/4198168d-02a8-4ee3-aed9-2d7c59a8a8e3"
@@ -1464,9 +1656,69 @@
 					(unit 1)
 				)
 			)
-			(project "rails_power_dc-dc-ldo-3v3_100mA-test"
-				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/a3f567b3-edcb-4aa0-8471-532dbe641db4"
-					(reference "C202")
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 44.45 41.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ecf699bf-ce22-4a8a-b680-662ec6886db0")
+		(property "Reference" "#FLG201"
+			(at 44.45 40.005 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 44.45 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 44.45 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 44.45 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 44.45 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "04ddb94c-5cf5-4ba6-bfb2-a4078b271f99")
+		)
+		(instances
+			(project ""
+				(path "/0ed6639a-cde6-4452-b9e1-77c370bade86/f74e307f-98ea-4a21-90fe-788ab4c41003"
+					(reference "#FLG201")
 					(unit 1)
 				)
 			)
