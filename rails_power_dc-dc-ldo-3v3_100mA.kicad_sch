@@ -1263,7 +1263,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "15266f69-836a-4e27-bb56-bcc72ea4627f")
-		(property "Reference" "#FLG202"
+		(property "Reference" "#FLG102"
 			(at 44.45 61.595 0)
 			(effects
 				(font
@@ -1311,7 +1311,11 @@
 			(uuid "7128e185-cc74-410b-ae34-ca0d0c1f4a63")
 		)
 		(instances
-			(project "rails_power_dc-dc-ldo-3v3_100mA-test"
+			(project "rails_power_dc-dc-ldo-3v3_100mA"
+				(path "/0ed6639a-cde6-4452-b9e1-77c370bade86"
+					(reference "#FLG102")
+					(unit 1)
+				)
 				(path "/0ed6639a-cde6-4452-b9e1-77c370bade86/f74e307f-98ea-4a21-90fe-788ab4c41003"
 					(reference "#FLG202")
 					(unit 1)
@@ -1698,7 +1702,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ecf699bf-ce22-4a8a-b680-662ec6886db0")
-		(property "Reference" "#FLG201"
+		(property "Reference" "#FLG101"
 			(at 44.45 40.005 0)
 			(effects
 				(font
@@ -1746,7 +1750,11 @@
 			(uuid "04ddb94c-5cf5-4ba6-bfb2-a4078b271f99")
 		)
 		(instances
-			(project ""
+			(project "rails_power_dc-dc-ldo-3v3_100mA"
+				(path "/0ed6639a-cde6-4452-b9e1-77c370bade86"
+					(reference "#FLG101")
+					(unit 1)
+				)
 				(path "/0ed6639a-cde6-4452-b9e1-77c370bade86/f74e307f-98ea-4a21-90fe-788ab4c41003"
 					(reference "#FLG201")
 					(unit 1)

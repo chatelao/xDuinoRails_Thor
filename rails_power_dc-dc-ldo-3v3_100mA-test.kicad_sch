@@ -1550,6 +1550,11 @@
 					(page "6")
 				)
 			)
+			(project "rails_power_dc-dc-ldo-3v3_100mA-test"
+				(path "/0ed6639a-cde6-4452-b9e1-77c370bade86"
+					(page "2")
+				)
+			)
 		)
 	)
 	(sheet_instances
