@@ -77,6 +77,18 @@ outputs:
     options:
       format: 'spice'
 
+  - name: 'Fertigungsdaten_ZIP'
+    comment: 'Erzeugt ein ZIP-Archiv mit allen Fertigungsdaten'
+    type: compress
+    dir: 'gen_docs'
+    options:
+      format: ZIP
+      files:
+        - from_output: 'Gerber_Dateien'
+          dest: ''
+        - from_output: 'Bohr_Dateien'
+          dest: ''
+
   - name: 'Archive'
     comment: 'Creates a ZIP file with all generated documentation'
     type: compress
