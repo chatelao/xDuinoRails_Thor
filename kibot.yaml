@@ -60,27 +60,27 @@ outputs:
   - name: '3D_Top_View'
     comment: "Raytracing Render der Oberseite"
     type: render_3d
-    dir: ''  # Unterordner für Übersichtlichkeit
+    dir: 'images'
+    # HIER gehört der Dateiname hin (Template):
+    output: 'PCB_3D_Top_View.%x'
     options:
-      output_name: 'PCB_3D_top_view.png'
-      quality: 9             # 0-9 (4 ist guter Kompromiss Speed/Qualität)
-      width: 1024            # Breite in Pixeln
-      view: 'top'            # 'top', 'bottom', 'left', 'right', etc.
+      quality: 7
+      width: 1024
+      view: 'top'
       zoom: 1.0
-      ray_tracing: true      # Wichtig für Schatten/Reflexionen
-      wait_for_key: false    # Sicherheitsnetz für CLI
+      ray_tracing: true
 
   - name: '3D_Bottom_View'
     comment: "Raytracing Render der Unterseite"
     type: render_3d
-    dir: ''
+    dir: 'images'
+    # Eindeutiger Name für Bottom:
+    output: 'PCB_3D_Bottom_View.%x'
     options:
-      output_name: 'PCB_3D_top_view.png'
-      quality: 9             # 0-9 (4 ist guter Kompromiss Speed/Qualität)
+      quality: 7
       width: 1024
       view: 'bottom'
       ray_tracing: true
-      wait_for_key: false    # Sicherheitsnetz für CLI
 
   - name: 'Gerber_Dateien'
     comment: 'Erzeugt Gerber-Daten für die Fertigung'
