@@ -35,6 +35,14 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Cache 3D models
+        uses: actions/cache@v4
+        with:
+          path: 3d_models/
+          key: ${{ runner.os }}-kicad-3d-models-v1
+          restore-keys: |
+            ${{ runner.os }}-kicad-3d-models-
+
       - name: Run KiBot
         uses: INTI-CMNB/KiBot@v2_k8
         with:
@@ -42,20 +50,6 @@ jobs:
           schema: ${{ matrix.project }}.kicad_sch
           board: ${{ matrix.project }}.kicad_pcb
           dir: assets/${{ matrix.project }}
-
-      - name: Cache 3D models
-        uses: actions/cache@v4
-        with:
-          path: 3d_models/
-          key: ${{ runner.os }}-kicad-3d-models-${{ hashFiles(format('**/{0}.kicad_pcb', matrix.project)) }}
-          restore-keys: |
-            ${{ runner.os }}-kicad-3d-models-
-
-      - name: Upload Documentation Artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: KiCad-Docs-${{ matrix.project }}
-          path: assets/${{ matrix.project }}/
 
   release:
     needs: check
