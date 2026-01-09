@@ -57,31 +57,31 @@ outputs:
       layers: [ 'F.Cu', 'B.Cu' ]
       plot_sheet_reference: true
 
-  - name: '3D_Top_View'
-    comment: "Raytracing Render der Oberseite (Blender)"
-    type: blender_export    # <--- NEUER TYP
-    dir: 'images'
-    options:
-      render_options:
-        samples: 10         # Weniger Samples für schnelleren CI-Build
-      point_of_view:
-        view: top
-      outputs:
-        - type: render
-          output: 'PCB_3D_Top_View.png'
+#  - name: '3D_Top_View'
+#    comment: "Raytracing Render der Oberseite (Blender)"
+#    type: blender_export    # <--- NEUER TYP
+#    dir: 'images'
+#    options:
+#      render_options:
+#        samples: 10         # Weniger Samples für schnelleren CI-Build
+#      point_of_view:
+#        view: top
+#      outputs:
+#        - type: render
+#          output: 'PCB_3D_Top_View.png'
 
-  - name: '3D_Bottom_View'
-    comment: "Raytracing Render der Unterseite (Blender)"
-    type: blender_export    # <--- NEUER TYP
-    dir: 'images'
-    options:
-      render_options:
-        samples: 10
-      point_of_view:
-        view: bottom
-      outputs:
-        - type: render
-          output: 'PCB_3D_Bottom_View.png'
+#  - name: '3D_Bottom_View'
+#    comment: "Raytracing Render der Unterseite (Blender)"
+#    type: blender_export    # <--- NEUER TYP
+#    dir: 'images'
+#    options:
+#      render_options:
+#        samples: 10
+#      point_of_view:
+#        view: bottom
+#      outputs:
+#        - type: render
+#          output: 'PCB_3D_Bottom_View.png'
 
   - name: 'Gerber_Dateien'
     comment: 'Erzeugt Gerber-Daten für die Fertigung'
