@@ -2,15 +2,15 @@ kibot:
   version: 1
 
 preflight:
-  # Der Schlüsselname bestimmt die Art der Prüfung (hier ERC)
+  # Check the schematics - Electrical rule check (ERC)
   erc:
     enabled: true
     warnings_as_errors: false 
     
-  # Der Schlüsselname bestimmt die Art der Prüfung (hier DRC)
+  # Check the printed circuit board - Design rule check (DRC)
   drc:
     enabled: false
-    # Optionen für DRC
+    warnings_as_errors: false 
     # ignore_unconnected: false
     
 outputs:
