@@ -63,11 +63,12 @@ outputs:
     dir: 'images'
     options:
       output: 'PCB_3D_Top_View.%x'
-      quality: 7
       width: 1024
       view: 'top'
       zoom: 1.0
       ray_tracing: true
+      # Falls es immer noch crasht, deaktiviere ray_tracing testweise:
+      # ray_tracing: false 
 
   - name: '3D_Bottom_View'
     comment: "Raytracing Render der Unterseite"
@@ -75,7 +76,6 @@ outputs:
     dir: 'images'
     options:
       output: 'PCB_3D_Bottom_View.%x'
-      quality: 7
       width: 1024
       view: 'bottom'
       ray_tracing: true
