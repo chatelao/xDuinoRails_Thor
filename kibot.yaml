@@ -54,9 +54,21 @@ outputs:
     options:
       format: PDF
       output: 'PCB_FB_Cu_Layers.pdf'
+      plot_sheet_reference: true
       pages:
         - layers: [ 'F.Cu', 'B.Cu' ]
-          sheet: 'S.'
+
+  - name: 'PDF_PCB_auessere_Kupfer_Lagen_gross'
+    comment: "Äussere PCB Kupfer Lagen"
+    type: pcb_print
+    dir: 'Plots'
+    options:
+      format: PDF
+      output: 'PCB_FB_Cu_Layers_Big.pdf'
+      scaling: 0
+      plot_sheet_reference: true
+      pages:
+        - layers: [ 'F.Cu', 'B.Cu' ]
 
 #  - name: '3D_Top_View'
 #    comment: "Raytracing Render der Oberseite (Blender)"
