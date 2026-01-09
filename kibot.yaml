@@ -63,6 +63,7 @@ outputs:
 #  - name: '3D_Top_View'
 #    comment: "Raytracing Render der Oberseite (Blender)"
 #    type: blender_export    # <--- NEUER TYP
+#    run_by_default: false
 #    dir: 'images'
 #    options:
 #      render_options:
@@ -76,6 +77,7 @@ outputs:
 #  - name: '3D_Bottom_View'
 #    comment: "Raytracing Render der Unterseite (Blender)"
 #    type: blender_export    # <--- NEUER TYP
+#    run_by_default: false
 #    dir: 'images'
 #    options:
 #      render_options:
