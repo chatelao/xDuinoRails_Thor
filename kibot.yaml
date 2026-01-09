@@ -26,17 +26,6 @@ outputs:
         - layers: all
           sheet: 'S.'
 
-  - name: 'PDF_PCB_alle_Lagen_einzeln'
-    comment: "Alle PCB Lagen (Migriert)"
-    type: pcb_print
-    dir: 'Plots'
-    options:
-      format: PDF
-      output: 'PCB_All_Layers_New.pdf'
-      pages:
-        - layers: all
-          sheet: 'S.'
-
   - name: 'PDF_PCB_alle_Lagen_einzeln_gross'
     comment: "Alle PCB Lagen Gross (Migriert)"
     type: pcb_print
@@ -46,7 +35,21 @@ outputs:
       output: 'PCB_All_Layers_Big.pdf'
       scaling: 0
       pages:
-        - layers: all
+        - layers: [ 'F.Cu' ]
+          sheet: 'S.'
+        - layers: [ 'B.Cu' ]
+          sheet: 'S.'
+        - layers: [ 'F.SilkS' ]
+          sheet: 'S.'
+        - layers: [ 'B.SilkS' ]
+          sheet: 'S.'
+        - layers: [ 'F.Mask' ]
+          sheet: 'S.'
+        - layers: [ 'B.Mask' ]
+          sheet: 'S.'
+        - layers: [ 'Edge.Cuts' ]
+          sheet: 'S.'
+        - layers: [ 'F.Fab' ]
           sheet: 'S.'
 
   - name: 'PDF_PCB_auessere_Kupfer_Lagen'
