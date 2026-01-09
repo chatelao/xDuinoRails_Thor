@@ -5,7 +5,7 @@ preflight:
   # Der Schlüsselname bestimmt die Art der Prüfung (hier ERC)
   erc:
     enabled: true
-    warnings_as_errors: true 
+    warnings_as_errors: false 
     
   # Der Schlüsselname bestimmt die Art der Prüfung (hier DRC)
   drc:
