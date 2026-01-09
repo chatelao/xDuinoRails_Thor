@@ -20,7 +20,7 @@ outputs:
     dir: '.'
 
   - name: 'PDF_PCB_alle_Lagen_zusammen'
-    comment: "Alle PCB Lagen in einem PDF (eine Lage pro Seite)"
+    comment: "Alle PCB Lagen in einem PDF"
     type: pdf_pcb_print
     dir: 'Plots'
     options:
@@ -36,6 +36,17 @@ outputs:
       layers: all
       separated: true
       plot_sheet_reference: true
+
+  - name: 'PDF_PCB_alle_Lagen_einzeln_gross'
+    comment: "Alle PCB Lagen in einem PDF (eine Lage pro Seite)"
+    type: pdf_pcb_print
+    dir: 'Plots'
+    options:
+      output_name: 'PCB_All_Seperate_Layers_big.pdf'
+      layers: all
+      separated: true
+      plot_sheet_reference: true
+      scaling: 0    # 0 = "Fit to page" (automatisch auf Blattgröße skalieren)
 
   - name: 'PDF_PCB_auessere_Kupfer_Lagen'
     comment: "Äussere PCB Kupfer Lagen in einem PDF"
