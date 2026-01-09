@@ -58,27 +58,30 @@ outputs:
       plot_sheet_reference: true
 
   - name: '3D_Top_View'
-    comment: "Raytracing Render der Oberseite"
-    type: blender_export
+    comment: "Raytracing Render der Oberseite (Blender)"
+    type: blender_export    # <--- NEUER TYP
     dir: 'images'
     options:
-      output: 'PCB_3D_Top_View.%x'
-      width: 1024
-      view: 'top'
-      zoom: 1.0
-      ray_tracing: true
-      # Falls es immer noch crasht, deaktiviere ray_tracing testweise:
-      # ray_tracing: false 
+      render_options:
+        samples: 10         # Weniger Samples für schnelleren CI-Build
+      point_of_view:
+        view: top
+      outputs:
+        - type: render
+          output: 'PCB_3D_Top_View.png'
 
   - name: '3D_Bottom_View'
-    comment: "Raytracing Render der Unterseite"
-    type: blender_export
+    comment: "Raytracing Render der Unterseite (Blender)"
+    type: blender_export    # <--- NEUER TYP
     dir: 'images'
     options:
-      output: 'PCB_3D_Bottom_View.%x'
-      width: 1024
-      view: 'bottom'
-      ray_tracing: true
+      render_options:
+        samples: 10
+      point_of_view:
+        view: bottom
+      outputs:
+        - type: render
+          output: 'PCB_3D_Bottom_View.png'
 
   - name: 'Gerber_Dateien'
     comment: 'Erzeugt Gerber-Daten für die Fertigung'
