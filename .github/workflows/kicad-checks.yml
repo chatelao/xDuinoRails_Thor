@@ -53,7 +53,7 @@ jobs:
           board: ${{ matrix.project }}.kicad_pcb
           dir: assets/${{ matrix.project }}
           # Option A: Nutze 'skip', um 3D hier auszuschließen
-          skip: 3d_render
+          skip: 3D_Top_View, 3D_Bottom_View
           # Option B (Besser): Nutze 'targets', um nur Gerber/PDF zu bauen
           # targets: gerbers, bom, schematic_pdf
 
@@ -68,7 +68,7 @@ jobs:
           board: ${{ matrix.project }}.kicad_pcb
           dir: assets/${{ matrix.project }}
           # Hier führen wir NUR den 3D-Teil aus
-          targets: 3d_render
+          targets: 3D_Top_View, 3D_Bottom_View
 
   release:
     needs: check
