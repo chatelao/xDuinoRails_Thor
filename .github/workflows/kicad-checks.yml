@@ -43,8 +43,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-kicad-3d-models-
 
-      # Schritt 1: Kritische Fertigungsdaten (Darf NICHT fehlschlagen)
-      # Wir überspringen hier explizit den 3D-Output, falls er "3d_render" heißt.
       - name: Run KiBot (Manufacturing)
         uses: INTI-CMNB/KiBot@v2_k8
         with:
@@ -52,23 +50,6 @@ jobs:
           schema: ${{ matrix.project }}.kicad_sch
           board: ${{ matrix.project }}.kicad_pcb
           dir: assets/${{ matrix.project }}
-          # Option A: Nutze 'skip', um 3D hier auszuschließen
-          skip: 3D_Top_View, 3D_Bottom_View
-          # Option B (Besser): Nutze 'targets', um nur Gerber/PDF zu bauen
-          # targets: gerbers, bom, schematic_pdf
-
-      # Schritt 2: 3D Rendering (Darf fehlschlagen)
-      - name: Run KiBot (3D Models)
-        uses: INTI-CMNB/KiBot@v2_k8
-        # HIER IST DER SCHLÜSSEL:
-        continue-on-error: true
-        with:
-          config: kibot.yaml
-          schema: ${{ matrix.project }}.kicad_sch
-          board: ${{ matrix.project }}.kicad_pcb
-          dir: assets/${{ matrix.project }}
-          # Hier führen wir NUR den 3D-Teil aus
-          targets: 3D_Top_View, 3D_Bottom_View
 
   release:
     needs: check
