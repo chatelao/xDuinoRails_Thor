@@ -57,6 +57,31 @@ outputs:
       layers: [ 'F.Cu', 'B.Cu' ]
       plot_sheet_reference: true
 
+  - name: '3D_Top_View'
+    comment: "Raytracing Render der Oberseite"
+    type: render_3d
+    dir: ''  # Unterordner für Übersichtlichkeit
+    options:
+      output_name: 'PCB_3D_top_view.png'
+      quality: 9             # 0-9 (4 ist guter Kompromiss Speed/Qualität)
+      width: 1024            # Breite in Pixeln
+      view: 'top'            # 'top', 'bottom', 'left', 'right', etc.
+      zoom: 1.0
+      ray_tracing: true      # Wichtig für Schatten/Reflexionen
+      wait_for_key: false    # Sicherheitsnetz für CLI
+
+  - name: '3D_Bottom_View'
+    comment: "Raytracing Render der Unterseite"
+    type: render_3d
+    dir: ''
+    options:
+      output_name: 'PCB_3D_top_view.png'
+      quality: 9             # 0-9 (4 ist guter Kompromiss Speed/Qualität)
+      width: 1024
+      view: 'bottom'
+      ray_tracing: true
+      wait_for_key: false    # Sicherheitsnetz für CLI
+
   - name: 'Gerber_Dateien'
     comment: 'Erzeugt Gerber-Daten für die Fertigung'
     type: gerber
