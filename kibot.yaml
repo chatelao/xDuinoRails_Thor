@@ -61,9 +61,8 @@ outputs:
     comment: "Raytracing Render der Oberseite"
     type: render_3d
     dir: 'images'
-    # HIER gehört der Dateiname hin (Template):
-    output: 'PCB_3D_Top_View.%x'
     options:
+      output: 'PCB_3D_Top_View.%x'
       quality: 7
       width: 1024
       view: 'top'
@@ -74,9 +73,8 @@ outputs:
     comment: "Raytracing Render der Unterseite"
     type: render_3d
     dir: 'images'
-    # Eindeutiger Name für Bottom:
-    output: 'PCB_3D_Bottom_View.%x'
     options:
+      output: 'PCB_3D_Bottom_View.%x'
       quality: 7
       width: 1024
       view: 'bottom'
