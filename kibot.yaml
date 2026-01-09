@@ -19,12 +19,39 @@ outputs:
     type: pdf_sch_print
     dir: '.'
 
+  - name: 'PDF_PCB_alle_Lagen_zusammen'
+    comment: "Alle PCB Lagen in einem PDF (eine Lage pro Seite)"
+    type: pdf_pcb_print
+    dir: 'Plots'
+    options:
+      output_name: 'PCB_All.pdf'
+      layers: all
+
+  - name: 'PDF_PCB_alle_Lagen_einzeln'
+    comment: "Alle PCB Lagen in einem PDF (eine Lage pro Seite)"
+    type: pdf_pcb_print
+    dir: 'Plots'
+    options:
+      output_name: 'PCB_All_Seperate_Layers.pdf'
+      layers: all
+      separated: true
+      plot_sheet_reference: true
+
+  - name: 'PDF_PCB_auessere_Kupfer_Lagen'
+    comment: "Äussere PCB Kupfer Lagen in einem PDF"
+    type: pdf_pcb_print
+    dir: 'Plots'
+    options:
+      output_name: 'PCB_FB_Cu_Layers.pdf'
+      layers: [ 'F.Cu', 'B.Cu' ]
+      plot_sheet_reference: true
+
   - name: 'Gerber_Dateien'
     comment: 'Erzeugt Gerber-Daten für die Fertigung'
     type: gerber
     dir: 'CAM'
     options:
-      use_protel_extensions: true    
+      use_protel_extensions: true
 
   - name: 'Bohr_Dateien'
     comment: 'Erzeugt Excellon-Bohrdateien'
