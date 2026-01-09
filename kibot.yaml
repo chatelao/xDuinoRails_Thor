@@ -30,35 +30,40 @@ outputs:
         - layers: all
           sheet: 'S.'
 
-  - name: 'PDF_PCB_alle_Lagen_einzeln'
-    comment: "Alle PCB Lagen in einem PDF (eine Lage pro Seite)"
-    type: pdf_pcb_print
+- name: 'PDF_PCB_alle_Lagen_einzeln'
+    comment: "Alle PCB Lagen"
+    type: pcb_print
     dir: 'Plots'
     options:
-      output_name: 'PCB_All_Seperate_Layers.pdf'
-      layers: all
-      separated: true
-      plot_sheet_reference: true
+      format: PDF
+      output: 'PCB_All_Layers_New.pdf'
+      pages:
+        - layers: all
+          sheet: 'S.'
 
   - name: 'PDF_PCB_alle_Lagen_einzeln_gross'
-    comment: "Alle PCB Lagen in einem PDF (eine Lage pro Seite)"
-    type: pdf_pcb_print
+    comment: "Alle PCB Lagen (Gross)"
+    type: pcb_print
     dir: 'Plots'
     options:
-      output_name: 'PCB_All_Seperate_Layers_big.pdf'
-      layers: all
-      separated: true
-      plot_sheet_reference: true
-      scaling: 0    # 0 = "Fit to page" (automatisch auf Blattgröße skalieren)
+      format: PDF
+      output: 'PCB_All_Layers_Big.pdf'
+      scaling: 0    # Fit to page
+      pages:
+        - layers: all
+          sheet: 'S.'
 
+  # --- KORRIGIERT: Äussere Lagen explizit definiert ---
   - name: 'PDF_PCB_auessere_Kupfer_Lagen'
     comment: "Äussere PCB Kupfer Lagen in einem PDF"
-    type: pdf_pcb_print
+    type: pcb_print
     dir: 'Plots'
     options:
-      output_name: 'PCB_FB_Cu_Layers.pdf'
-      layers: [ 'F.Cu', 'B.Cu' ]
-      plot_sheet_reference: true
+      format: PDF
+      output: 'PCB_FB_Cu_Layers.pdf'
+      pages:
+        - layers: [ 'F.Cu', 'B.Cu' ]
+          sheet: 'S.'
 
 #  - name: '3D_Top_View'
 #    comment: "Raytracing Render der Oberseite (Blender)"
