@@ -2,17 +2,13 @@ kibot:
   version: 1
 
 preflight:
-  # Check the schematics - Electrical rule check (ERC)
   erc:
     enabled: true
-    warnings_as_errors: false 
-    
-  # Check the printed circuit board - Design rule check (DRC)
+    warnings_as_errors: false
   drc:
     enabled: false
-    warnings_as_errors: false 
-    # ignore_unconnected: false
-    
+    warnings_as_errors: false
+
 outputs:
   - name: 'PDF_Schaltplan'
     comment: 'Erzeugt ein PDF des Schaltplans'
@@ -30,8 +26,8 @@ outputs:
         - layers: all
           sheet: 'S.'
 
-- name: 'PDF_PCB_alle_Lagen_einzeln'
-    comment: "Alle PCB Lagen"
+  - name: 'PDF_PCB_alle_Lagen_einzeln'
+    comment: "Alle PCB Lagen (Migriert)"
     type: pcb_print
     dir: 'Plots'
     options:
@@ -42,20 +38,19 @@ outputs:
           sheet: 'S.'
 
   - name: 'PDF_PCB_alle_Lagen_einzeln_gross'
-    comment: "Alle PCB Lagen (Gross)"
+    comment: "Alle PCB Lagen Gross (Migriert)"
     type: pcb_print
     dir: 'Plots'
     options:
       format: PDF
       output: 'PCB_All_Layers_Big.pdf'
-      scaling: 0    # Fit to page
+      scaling: 0
       pages:
         - layers: all
           sheet: 'S.'
 
-  # --- KORRIGIERT: Äussere Lagen explizit definiert ---
   - name: 'PDF_PCB_auessere_Kupfer_Lagen'
-    comment: "Äussere PCB Kupfer Lagen in einem PDF"
+    comment: "Äussere PCB Kupfer Lagen"
     type: pcb_print
     dir: 'Plots'
     options:
@@ -118,7 +113,7 @@ outputs:
           name: 'Value'
         - field: 'Footprint'
           name: 'Package'
-        - field: 'LCSC' # Falls Sie ein Custom-Feld "LCSC" für Bauteilnummern haben
+        - field: 'LCSC'
           name: 'LCSC Part #'
         - field: 'Quantity'
           name: 'Quantity'
@@ -165,9 +160,9 @@ outputs:
   - name: 'Archive'
     comment: 'Creates a ZIP file with all generated documentation'
     type: compress
-    dir: '.' # The ZIP will be created in the project root
+    dir: '.'
     options:
       output: 'KiCad-Board-Documentation.zip'
       files:
-        # This will grab the entire gen_docs directory and put it in the zip
         - source: 'gen_docs/**'
+
