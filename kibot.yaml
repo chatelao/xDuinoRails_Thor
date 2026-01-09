@@ -59,7 +59,7 @@ outputs:
 
   - name: '3D_Top_View'
     comment: "Raytracing Render der Oberseite"
-    type: render_3d
+    type: blender_export
     dir: 'images'
     options:
       output: 'PCB_3D_Top_View.%x'
@@ -72,7 +72,7 @@ outputs:
 
   - name: '3D_Bottom_View'
     comment: "Raytracing Render der Unterseite"
-    type: render_3d
+    type: blender_export
     dir: 'images'
     options:
       output: 'PCB_3D_Bottom_View.%x'
