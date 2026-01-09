@@ -36,25 +36,15 @@ outputs:
       scaling: 0
       pages:
         - layers: [ 'F.Cu' ]
-          sheet: '%'
+        - layers: [ 'In1.Cu' ]
         - layers: [ 'In2.Cu' ]
-          sheet: '%'
         - layers: [ 'B.Cu' ]
-          sheet: '%'
-        - layers: [ 'B.Cu' ]
-          sheet: '%'
         - layers: [ 'F.SilkS' ]
-          sheet: '%'
         - layers: [ 'B.SilkS' ]
-          sheet: '%'
         - layers: [ 'F.Mask' ]
-          sheet: '%'
         - layers: [ 'B.Mask' ]
-          sheet: '%'
         - layers: [ 'Edge.Cuts' ]
-          sheet: '%'
         - layers: [ 'F.Fab' ]
-          sheet: '%'
 
   - name: 'PDF_PCB_auessere_Kupfer_Lagen'
     comment: "Äussere PCB Kupfer Lagen"
