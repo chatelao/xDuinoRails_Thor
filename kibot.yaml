@@ -24,7 +24,7 @@ outputs:
     type: pcb_print
     dir: 'Plots'
     options:
-      format: pdf
+      format: PDF
       output: 'PCB_All.pdf'
       pages:
         - layers: all
