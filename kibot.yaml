@@ -70,6 +70,30 @@ outputs:
       pages:
         - layers: [ 'F.Cu', 'B.Cu' ]
 
+  - name: 'highlight_u_plus'
+    comment: 'Hervorhebung des Netzes U+ auf Seitengröße'
+    type: pcbdraw
+    dir: 'Power_Check'
+    options:
+      format: PDF
+      # PcbDraw nutzt 'highlight' (Liste von Netzen), um diese farblich zu markieren
+      highlight: ['U+']
+      # Zeige keine Komponenten, um den Fokus auf die Leiterbahnen zu legen (optional anpassbar)
+      show_components: none
+      # Stellt sicher, dass das Board auf der Seite zentriert/sichtbar ist
+      # Hinweis: PcbDraw exportiert oft in Board-Größe. Für A4-Scaling müsste man ggf. SVG nutzen und konvertieren.
+      output: '%f-U_Plus.%x'
+
+  - name: 'highlight_gnd'
+    comment: 'Hervorhebung des Netzes GND auf Seitengröße'
+    type: pcbdraw
+    dir: 'Power_Check'
+    options:
+      format: PDF
+      highlight: ['GND']
+      show_components: none
+      output: '%f-GND.%x'
+
 #  - name: '3D_Top_View'
 #    comment: "Raytracing Render der Oberseite (Blender)"
 #    type: blender_export    # <--- NEUER TYP
