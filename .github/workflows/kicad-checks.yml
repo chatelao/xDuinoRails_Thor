@@ -35,8 +35,27 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Install Pinion
+        run: pip3 install pinion
+      - name: Install Pinion
+        run: pip3 install pinion
+
+      - name: Install Pinion
+        run: pip3 install pinion
+
+      - name: Install Pinion
+        run: pip3 install pinion
+
       # --- REMOVED BROKEN CACHE STEP HERE ---
 
+      - name: Find Pinion Config
+        id: find_pinion_config
+        run: |
+          if [ -f "${{ matrix.project }}.pinion.yaml" ]; then
+            echo "found=true" >> $GITHUB_OUTPUT
+          else
+            echo "found=false" >> $GITHUB_OUTPUT
+          fi
       - name: Run KiBot (Manufacturing)
         uses: INTI-CMNB/KiBot@v2_k8
         with:
@@ -45,6 +64,13 @@ jobs:
           board: ${{ matrix.project }}.kicad_pcb
           # KiBot will put output files into this folder:
           dir: assets/${{ matrix.project }}
+
+      - name: Run Pinion
+        if: "steps.find_pinion_config.outputs.found == 'true'"
+        run: |
+          pinion render \
+            --config ${{ matrix.project }}.pinion.yaml \
+            --output assets/${{ matrix.project }}/pinout.svg
 
       # --- NEW STEP: SAVE THE FILES ---
       - name: Upload Artifacts

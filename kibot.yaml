@@ -191,6 +191,15 @@ outputs:
         - from_output: 'Bohr_Dateien'
           dest: ''
 
+  - name: 'Pinion_Image'
+    comment: 'Generate a picture of the board for Pinion'
+    type: pcbdraw
+    dir: 'assets'
+    options:
+      format: png
+      output: board_top.png
+      style: oshpark-purple
+
   - name: 'Archive'
     comment: 'Creates a ZIP file with all generated documentation'
     type: compress
