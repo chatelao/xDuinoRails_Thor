@@ -18,10 +18,9 @@ outputs:
   - name: 'PDF_PCB_alle_Lagen_zusammen'
     comment: "Alle PCB Lagen in einem PDF"
     type: pcb_print
-    dir: 'Plots'
     options:
       format: PDF
-      output: 'PCB_All.pdf'
+      output: '%f-PCB_All.pdf'
       pages:
         - layers: all
           sheet: 'S.'
@@ -29,10 +28,9 @@ outputs:
   - name: 'PDF_PCB_alle_Lagen_einzeln_gross'
     comment: "Alle PCB Lagen Gross (Migriert)"
     type: pcb_print
-    dir: 'Plots'
     options:
       format: PDF
-      output: 'PCB_All_Layers_Big.pdf'
+      output: '%f-PCB_All_Layers_Big.pdf'
       scaling: 0
       plot_sheet_reference: true
       pages:
@@ -50,10 +48,9 @@ outputs:
   - name: 'PDF_PCB_auessere_Kupfer_Lagen'
     comment: "Äussere PCB Kupfer Lagen"
     type: pcb_print
-    dir: 'Plots'
     options:
       format: PDF
-      output: 'PCB_FB_Cu_Layers.pdf'
+      output: '%f-PCB_FB_Cu_Layers.pdf'
       plot_sheet_reference: true
       pages:
         - layers: [ 'F.Cu', 'B.Cu' ]
@@ -61,10 +58,9 @@ outputs:
   - name: 'PDF_PCB_auessere_Kupfer_Lagen_gross'
     comment: "Äussere PCB Kupfer Lagen"
     type: pcb_print
-    dir: 'Plots'
     options:
       format: PDF
-      output: 'PCB_FB_Cu_Layers_Big.pdf'
+      output: '%f-PCB_FB_Cu_Layers_Big.pdf'
       scaling: 0
       plot_sheet_reference: true
       pages:
@@ -73,9 +69,8 @@ outputs:
   - name: 'highlight_u_plus'
     comment: 'Hervorhebung des Netzes U+ auf Seitengröße'
     type: pcbdraw
-    dir: 'Power_Check'
     options:
-      format: PDF
+      format: png
       # PcbDraw nutzt 'highlight' (Liste von Netzen), um diese farblich zu markieren
       highlight: ['U+']
       # Zeige keine Komponenten, um den Fokus auf die Leiterbahnen zu legen (optional anpassbar)
@@ -87,52 +82,62 @@ outputs:
   - name: 'highlight_gnd'
     comment: 'Hervorhebung des Netzes GND auf Seitengröße'
     type: pcbdraw
-    dir: 'Power_Check'
     options:
-      format: PDF
+      format: png
       highlight: ['GND']
       show_components: none
       output: '%f-GND.%x'
 
-#  - name: '3D_Top_View'
-#    comment: "Raytracing Render der Oberseite (Blender)"
-#    type: blender_export    # <--- NEUER TYP
-#    run_by_default: false
-#    dir: 'images'
-#    options:
-#      render_options:
-#        samples: 10         # Weniger Samples für schnelleren CI-Build
-#      point_of_view:
-#        view: top
-#      outputs:
-#        - type: render
-#          output: 'PCB_3D_Top_View.png'
+- name: '3D_Top_View'
+    comment: "Render der Oberseite (KiCad 8 Internal)"
+    type: pcb3d
+    dir: 'images'
+    options:
+      format: png
+      width: 2048
+      height: 1536
+      view: top
+      ray_tracing: true
+      # Erhöht das Timeout, da KiCad 8 Raytracing manchmal etwas länger initialisiert
+      wait_ray_tracing: true
+      
+      # WICHTIG FÜR KICAD 8:
+      # KiCad 8 nutzt oft KICAD8_3DMODEL_DIR statt KICAD6/7_...
+      # Wenn deine Modelle fehlen, hilft oft das explizite Deaktivieren des Caches
+      # oder das Forcieren des Downloads (falls KiBot das im Setup macht).
+      # Hier verlassen wir uns auf die Standard-Pfade.
+      
+      output: '%f-3D_Top.%x'
 
-#  - name: '3D_Bottom_View'
-#    comment: "Raytracing Render der Unterseite (Blender)"
-#    type: blender_export    # <--- NEUER TYP
-#    run_by_default: false
-#    dir: 'images'
-#    options:
-#      render_options:
-#        samples: 10
-#      point_of_view:
-#        view: bottom
-#      outputs:
-#        - type: render
-#          output: 'PCB_3D_Bottom_View.png'
+  - name: '3D_Bottom_View'
+    comment: "Render der Unterseite (KiCad 8 Internal)"
+    type: pcb3d
+    dir: 'images'
+    options:
+      format: png
+      width: 2048
+      height: 1536
+      view: bottom
+      ray_tracing: true
+      wait_ray_tracing: true
+      output: '%f-3D_Bottom.%x'
 
   - name: 'Gerber_Dateien'
     comment: 'Erzeugt Gerber-Daten für die Fertigung'
     type: gerber
-    dir: 'CAM'
+    dir: 'grbr'
     options:
       use_protel_extensions: true
+      # Unterdrückt die Referenzbezeichner (z.B. U101, R5)
+      plot_footprint_refs: false
+      # Optional: Unterdrückt auch die Werte (z.B. 10k, 100nF), falls gewünscht
+      plot_footprint_values: false      
 
   - name: 'Bohr_Dateien'
     comment: 'Erzeugt Excellon-Bohrdateien'
     type: excellon
-    dir: 'CAM'
+    dir: 'grbr'
+
 
   - name: 'Stueckliste_BOM'
     comment: 'Erzeugt eine Stückliste im CSV-Format'
@@ -147,10 +152,8 @@ outputs:
           name: 'Value'
         - field: 'Footprint'
           name: 'Package'
-        - field: 'LCSC'
-          name: 'LCSC Part #'
-        - field: 'Quantity'
-          name: 'Quantity'
+        - field: 'OLI_ID'
+          name: 'Olis ID #'
 
   - name: 'position_files'
     comment: 'Positionsdateien für die Bestückung (Pick & Place)'
@@ -182,14 +185,14 @@ outputs:
   - name: 'Fertigungsdaten_ZIP'
     comment: 'Erzeugt ein ZIP-Archiv mit allen Fertigungsdaten'
     type: compress
-    dir: 'gen_docs'
+    dir: 'CAM'
     options:
       format: ZIP
       files:
         - from_output: 'Gerber_Dateien'
-          dest: ''
+          dest: '/'
         - from_output: 'Bohr_Dateien'
-          dest: ''
+          dest: '/'
 
   - name: 'Archive'
     comment: 'Creates a ZIP file with all generated documentation'
@@ -200,3 +203,13 @@ outputs:
       files:
         - source: 'gen_docs/**'
 
+  - name: 'Interactive_BOM'
+    comment: 'Erzeugt eine interaktive HTML-Stückliste (iBOM)'
+    type: ibom
+    options:
+      dark_mode: true
+      sort_order: 'C,R,L,D,U,J,T'
+      # ÄNDERUNG: Werte als kommagetrennter String, nicht als Liste
+      show_fields: 'Value,Footprint'
+      group_fields: 'Value,Footprint'
+      output: '%f-iBOM.html'
