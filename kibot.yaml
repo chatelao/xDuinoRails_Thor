@@ -88,7 +88,7 @@ outputs:
       show_components: none
       output: '%f-GND.%x'
 
-- name: '3D_Top_View'
+-   name: '3D_Top_View'
     comment: "Render der Oberseite (KiCad 8 Internal)"
     type: pcb3d
     dir: 'images'
