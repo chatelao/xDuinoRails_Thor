@@ -24,4 +24,4 @@ For commercial inquiries, please contact: [YOUR EMAIL/CONTACT LINK]
 ### CERN Open Hardware Licence Version 2 - Strongly Reciprocal (CERN-OHL-S)
 
 [Full text of the license should be pasted here. You can find it at: 
-https://ohwr.org/project/cernohl/wikis/Documents/CERN-OHL-version-2]
+[https://ohwr.org/project/cernohl/wikis/Documents/CERN-OHL-version-2](https://gitlab.com/ohwr/project/cernohl/-/wikis/uploads/819d71bea3458f71fba6cf4fb0f2de6b/cern_ohl_s_v2.txt)]
