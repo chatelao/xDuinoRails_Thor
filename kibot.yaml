@@ -1,6 +1,13 @@
 kibot:
   version: 1
 
+filters:
+  - name: 'hide_refs_filter'
+    comment: 'Hides reference designators for 3D render'
+    type: transform_footprints
+    hide_reference: true
+    hide_value: true
+
 preflight:
   erc:
     enabled: true
@@ -93,21 +100,14 @@ outputs:
     # Doku bestätigt: 'render_3d' ist der korrekte Typ
     type: render_3d
     dir: 'images'
+    filters: [ hide_refs_filter ]
     options:
-      # 'format' entfernt, da in Doku nicht existent. 
-      # Die Endung .png unten im 'output' definiert das Format.
-      
       width: 2048
       height: 1536
       view: top
       
       # Aktiviert den hochwertigen Render-Modus
-      ray_tracing: true
-      
-      # 'wait_ray_tracing' entfernt.
-      # Default ist -600 (Auto-Detect, wartet bis CPU-Last sinkt).
-      # Das ist sicherer als ein fester Wert oder 'true'.
-      
+      # ray_tracing: true
       output: '%f-3D_Top.png'
 
   - name: '3D_Bottom_View'
