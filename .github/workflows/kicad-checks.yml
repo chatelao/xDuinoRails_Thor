@@ -35,13 +35,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Install Pinion dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y libjpeg-dev zlib1g-dev
-      - name: Install Pinion
-        run: pip3 install pinion
-
       - name: Find Pinion Config
         id: find_pinion_config
         run: |
@@ -58,13 +51,19 @@ jobs:
           board: ${{ matrix.project }}.kicad_pcb
           # KiBot will put output files into this folder:
           dir: assets/${{ matrix.project }}
-
-      - name: Run Pinion
-        if: "steps.find_pinion_config.outputs.found == 'true'"
-        run: |
-          pinion render \
-            --config ${{ matrix.project }}.pinion.yaml \
-            --output assets/${{ matrix.project }}/pinout.svg
+          pre_launch_script: |
+            # Install pinion dependencies
+            apt-get update
+            apt-get install -y libjpeg-dev zlib1g-dev
+            # Install pinion
+            pip3 install pinion
+          post_launch_script: |
+            # Run pinion if config exists
+            if [ "${{ steps.find_pinion_config.outputs.found }}" = "true" ]; then
+              pinion render \
+                --config ${{ matrix.project }}.pinion.yaml \
+                --output assets/${{ matrix.project }}/pinout.svg
+            fi
 
       # --- NEW STEP: SAVE THE FILES ---
       - name: Upload Artifacts
