@@ -33,6 +33,7 @@ outputs:
   - name: 'PDF_PCB_alle_Lagen_zusammen'
     comment: "Alle PCB Lagen in einem PDF"
     type: pcb_print
+    dir: 'documentations'
     options:
       format: PDF
       output: '%f-PCB_All.pdf'
@@ -43,6 +44,7 @@ outputs:
   - name: 'PDF_PCB_alle_Lagen_einzeln_gross'
     comment: "Alle PCB Lagen Gross (Migriert)"
     type: pcb_print
+    dir: 'documentations'
     options:
       format: PDF
       output: '%f-PCB_All_Layers_Big.pdf'
@@ -63,6 +65,7 @@ outputs:
   - name: 'PDF_PCB_auessere_Kupfer_Lagen'
     comment: "Äussere PCB Kupfer Lagen"
     type: pcb_print
+    dir: 'documentations'
     options:
       format: PDF
       output: '%f-PCB_FB_Cu_Layers.pdf'
@@ -73,6 +76,7 @@ outputs:
   - name: 'PDF_PCB_auessere_Kupfer_Lagen_gross'
     comment: "Äussere PCB Kupfer Lagen"
     type: pcb_print
+    dir: 'documentations'
     options:
       format: PDF
       output: '%f-PCB_FB_Cu_Layers_Big.pdf'

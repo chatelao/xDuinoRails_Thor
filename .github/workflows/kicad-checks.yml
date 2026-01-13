@@ -74,6 +74,31 @@ jobs:
           # Upload the directory where KiBot generated the files
           path: assets/${{ matrix.project }}
 
+  deploy:
+    needs: check
+    if: github.ref == 'refs/heads/main'
+    permissions:
+      pages: write
+      id-token: write
+    concurrency:
+      group: "pages"
+      cancel-in-progress: true
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: artifacts/
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "artifacts/artifacts-xDuinoRails-Thor-M"
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
   release:
     needs: check
     # Only run this job if a tag starting with 'v' was pushed
@@ -91,6 +116,8 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           # This grabs all files recursively inside the artifacts folder
-          files: artifacts/**/*
+          files: |
+            artifacts/artifacts-xDuinoRails-Thor-M/xDuinoRails-Thor-M-schematic.pdf
+            artifacts/artifacts-xDuinoRails-Thor-M/documentations/xDuinoRails-Thor-M-PCB*.pdf
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
