@@ -2,11 +2,19 @@ kibot:
   version: 1
 
 filters:
-  - name: 'hide_refs_filter'
-    comment: 'Hides reference designators for 3D render'
-    type: transform_footprints
-    hide_reference: true
-    hide_value: true
+  - name: 'hide_refs'
+    comment: 'Ersetzt den Referenz-Text durch ein Leerzeichen'
+    type: field_modify
+    fields: ['Reference']
+    regex: '.*'
+    replace: ' '
+
+variants:
+  - name: 'clean_render_variant'
+    comment: 'Variante ohne sichtbare Referenzen'
+    type: kibom
+    pre_transform:
+      - 'hide_refs'
 
 preflight:
   erc:
@@ -95,19 +103,26 @@ outputs:
       show_components: none
       output: '%f-GND.%x'
 
+  - name: '3D_Top_View_Clean'
+    comment: "Render ohne Referenzen"
+    type: render_3d
+    dir: 'images'
+    options:
+      view: top
+      ray_tracing: true
+      # Hier die Variante aktivieren
+      variant: 'clean_render_variant'
+      output: '%f-3D_Top_Clean.png'
+
   - name: '3D_Top_View'
     comment: "Render der Oberseite (KiCad Internal)"
     # Doku bestätigt: 'render_3d' ist der korrekte Typ
     type: render_3d
     dir: 'images'
-    filters: [ hide_refs_filter ]
     options:
       width: 2048
       height: 1536
-      view: top
-      
-      # Aktiviert den hochwertigen Render-Modus
-      # ray_tracing: true
+      view: top      
       output: '%f-3D_Top.png'
 
   - name: '3D_Bottom_View'
