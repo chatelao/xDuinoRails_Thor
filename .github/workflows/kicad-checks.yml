@@ -35,18 +35,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Install Pinion dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libjpeg-dev zlib1g-dev
       - name: Install Pinion
         run: pip3 install pinion
-      - name: Install Pinion
-        run: pip3 install pinion
-
-      - name: Install Pinion
-        run: pip3 install pinion
-
-      - name: Install Pinion
-        run: pip3 install pinion
-
-      # --- REMOVED BROKEN CACHE STEP HERE ---
 
       - name: Find Pinion Config
         id: find_pinion_config
